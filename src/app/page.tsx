@@ -51,7 +51,35 @@ export default function Home() {
 
             <div>
               <strong className="font-bold text-2xl mb-4 inline-block">Development</strong>
-              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
+              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+            </div>
+          </article>
+          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+            <Image
+              aria-hidden
+              src="/app.svg"
+              alt="Web and Mobile apps icon"
+              width={32}
+              height={32}
+            />
+
+            <div>
+              <strong className="font-bold text-2xl mb-4 inline-block">Web and Mobile apps</strong>
+              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+            </div>
+          </article>
+          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+            <Image
+              aria-hidden
+              src="/tools.svg"
+              alt="Tools icon"
+              width={32}
+              height={32}
+            />
+
+            <div>
+              <strong className="font-bold text-2xl mb-4 inline-block">Attention to details</strong>
+              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
             </div>
           </article>
         </section>
