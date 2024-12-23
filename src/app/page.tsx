@@ -41,8 +41,8 @@ export default function Home() {
       </main>
       
       <footer>
-        <div className="text-[#DCD7CD] text-center py-48">
-          <p className="text-2xl mb-8">Let’s work together!</p>
+        <div className="text-[#DCD7CD] py-48 flex flex-col gap-8 items-center justify-center">
+          <p className="text-2xl">Let’s work together!</p>
           <p className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text">erickgus@gmail.com</p>
         </div>
 
