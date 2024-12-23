@@ -18,6 +18,9 @@ export default {
       fontSize: {
         // 52px
         "5.5xl": "3.25rem",
+      },
+      maxWidth: {
+        "screen-lg": "1080px",
       }
     },
   },
