@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8">
-        <strong>Erick Gustavo</strong>
+        <strong className="font-normal text-sm">Erick Gustavo</strong>
 
         <div className="flex gap-4 text-sm items-center">
           <a href="https://github.com/erickgust" rel="noopener noreferrer" target="_blank" className="inline-block rounded-full border p-2">
