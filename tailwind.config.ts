@@ -9,6 +9,7 @@ export default {
   theme: {
     fontWeight: {
       normal: '450',
+      bold: '750',
     },
     extend: {
       colors: {
