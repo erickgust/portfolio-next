@@ -30,7 +30,14 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
+      <main className="max-w-screen-lg mx-auto">
+        <section className="min-h-[calc(100vh-100px)] grid place-items-center">
+          <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
+            Passionate front-end developer, eager to 
+            use his skills on challenging projects that 
+            can have a positive impact on people&apos;s lives.
+          </h1>
+        </section>
       </main>
       
       <footer>
