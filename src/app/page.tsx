@@ -20,7 +20,7 @@ export default function Home() {
             width={14}
             height={14}
           />
-          <span className="pt-0.5">Designed by Miel</span>
+          <span className="pt-0.5">Designed by <a href="https://bento.me/miel" rel="noopener noreferrer" target="_blank">Miel</a></span>
         </div>
       </footer>
     </div>
