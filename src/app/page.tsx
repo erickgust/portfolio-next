@@ -38,6 +38,23 @@ export default function Home() {
             can have a positive impact on people&apos;s lives.
           </h1>
         </section>
+
+        <section className="flex gap-4 justify-between">
+          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+            <Image
+              aria-hidden
+              src="/dev.svg"
+              alt="Development icon"
+              width={32}
+              height={32}
+            />
+
+            <div>
+              <strong className="font-bold text-2xl mb-4 inline-block">Development</strong>
+              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
+            </div>
+          </article>
+        </section>
       </main>
       
       <footer>
