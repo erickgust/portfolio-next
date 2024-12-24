@@ -7,11 +7,11 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    fontWeight: {
-      normal: '450',
-      bold: '750',
-    },
     extend: {
+      fontWeight: {
+        normal: '450',
+        bold: '750',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -19,6 +19,8 @@ export default {
       fontSize: {
         // 52px
         "5.5xl": "3.25rem",
+        // 26px
+        "2.5xl": "1.625rem",
       },
       maxWidth: {
         "screen-lg": "1080px",
