@@ -30,8 +30,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-screen-lg mx-auto">
-        <section className="min-h-[calc(100vh-100px)] grid place-items-center">
+      <main className="">
+        <section className="max-w-screen-lg mx-auto min-h-[calc(100vh-100px)] grid place-items-center">
           <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
             Passionate front-end developer, eager to 
             use his skills on challenging projects that 
@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className="flex gap-4 justify-between">
+        <section className="max-w-screen-lg mx-auto flex gap-4 justify-between">
           <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
             <Image
               aria-hidden
