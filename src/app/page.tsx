@@ -84,7 +84,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section>
+        <section className="max-w-screen-lg mx-auto space-y-16 py-12">
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
@@ -101,6 +101,52 @@ export default function Home() {
               </strong>
 
               <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">June 2023 - March 2024</i>
+            </div>
+
+            <div className="max-w-prose">
+              <p className="mt-4">Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
+            </div>
+          </article>
+          
+          <article>
+            <div className="flex flex-col gap-2">
+              <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
+                <span>Front-end Intern at</span>
+                <Image
+                  aria-hidden
+                  src="/upbase.svg"
+                  alt="UpBase Consultoria logo"
+                  width={26}
+                  height={26}
+                  className="inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5"
+                />
+                <span>UpBase Consultoria</span>
+              </strong>
+
+              <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">November 2022 - May 2023</i>
+            </div>
+
+            <div className="max-w-prose">
+              <p className="mt-4">Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
+            </div>
+          </article>
+          
+          <article>
+            <div className="flex flex-col gap-2">
+              <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
+                <span>Student in Analysis and Development of Systems at</span>
+                <Image
+                  aria-hidden
+                  src="/unicesumar.svg"
+                  alt="Universidade Cesumar logo"
+                  width={26}
+                  height={26}
+                  className="inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5"
+                />
+                <span>Universidade Cesumar</span>
+              </strong>
+
+              <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">November 2022 - December 2024</i>
             </div>
 
             <div className="max-w-prose">
