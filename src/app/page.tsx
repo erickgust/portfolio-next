@@ -83,6 +83,31 @@ export default function Home() {
             </div>
           </article>
         </section>
+
+        <section>
+          <article>
+            <div className="flex flex-col gap-2">
+              <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
+                <span>Front-end Developer at</span>
+                <Image
+                  aria-hidden
+                  src="/quackity.svg"
+                  alt="Quackity Studios logo"
+                  width={26}
+                  height={26}
+                  className="inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5"
+                />
+                <span>Quackity Studios</span>
+              </strong>
+
+              <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">June 2023 - March 2024</i>
+            </div>
+
+            <div className="max-w-prose">
+              <p className="mt-4">Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
+            </div>
+          </article>
+        </section>
       </main>
       
       <footer>
