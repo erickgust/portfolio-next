@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className="max-w-screen-lg mx-auto flex gap-4 justify-between">
+        <section className="max-w-screen-lg mx-auto flex gap-4 justify-between py-12">
           <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
             <Image
               aria-hidden
