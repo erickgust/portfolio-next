@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen">
-      <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8">
+      <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8 border-x border-white border-opacity-5">
         <strong className="font-normal text-sm">Erick Gustavo</strong>
 
         <div className="flex gap-4 text-sm items-center">
@@ -30,8 +30,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="">
-        <section className="max-w-screen-lg mx-auto min-h-[calc(100vh-100px)] grid place-items-center">
+      <main>
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 min-h-[calc(100vh-100px)] grid place-items-center">
           <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
             Passionate front-end developer, eager to 
             use his skills on challenging projects that 
@@ -39,7 +39,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className="max-w-screen-lg mx-auto flex gap-4 justify-between py-12">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 flex gap-4 justify-between py-12">
           <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
             <Image
               aria-hidden
@@ -84,7 +84,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="max-w-screen-lg mx-auto py-40 space-y-44">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 py-40 space-y-44">
           <article>
             <Image
               src="/qsmp-bg.jpg"
@@ -419,7 +419,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="max-w-screen-lg mx-auto space-y-16 py-12">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 space-y-16 py-12">
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
@@ -491,7 +491,7 @@ export default function Home() {
         </section>
       </main>
       
-      <footer>
+      <footer className="max-w-screen-lg mx-auto border-x border-white border-opacity-5">
         <div className="text-[#DCD7CD] py-48 flex flex-col gap-8 items-center justify-center">
           <p className="text-2xl">Let’s work together!</p>
           <p className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text">erickgus@gmail.com</p>
