@@ -506,7 +506,7 @@ export default function Home() {
           <p className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text">erickgus@gmail.com</p>
         </div>
 
-        <div className="text-xs flex gap-1.5 text-[#57544E] items-center lowercase p-8 justify-center leading-none">
+        <div className="group text-xs flex gap-1.5 text-[#57544E] items-center lowercase p-8 justify-center leading-none">
           <span className="pt-0.5">Developed by Erick</span>
           <Image
             aria-hidden
@@ -514,6 +514,7 @@ export default function Home() {
             alt="Star icon as a separator"
             width={14}
             height={14}
+            className="group-hover:rotate-90 transition-transform duration-300"
           />
           <span className="pt-0.5">Designed by <a href="https://bento.me/miel" rel="noopener noreferrer" target="_blank">Miel</a></span>
         </div>
