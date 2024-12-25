@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8 border-x border-white border-opacity-5">
         <strong className="font-normal text-sm">Erick Gustavo</strong>
 
@@ -89,7 +89,7 @@ export default function Home() {
         <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 py-40 space-y-44 relative">
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
               <Image
                 src="/qsmp-bg.jpg"
                 alt="QSMP.co website screenshot"
@@ -97,7 +97,7 @@ export default function Home() {
                 height={408}
                 className="h-[25.5rem] w-full object-cover rounded"
               />
-              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
@@ -193,7 +193,7 @@ export default function Home() {
 
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
               <Image
                 src="/mycontacts-bg.jpg"
                 alt="MyContacts website screenshot"
@@ -201,7 +201,7 @@ export default function Home() {
                 height={408}
                 className="h-[25.5rem] w-full object-cover rounded"
               />
-              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
@@ -321,8 +321,8 @@ export default function Home() {
 
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
-              <span className="block h-px absolute top-20 -inset-x-full bg-white opacity-5 -z-10" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute top-20 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5 -z-10" />
 
               <Image
                 src="/calculator-bg.jpg"
@@ -332,7 +332,7 @@ export default function Home() {
                 className="h-[25.5rem] w-full object-cover rounded"
               />
 
-              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
@@ -436,7 +436,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 space-y-16 py-12">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-white before:opacity-5 after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-white after:opacity-5">
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
