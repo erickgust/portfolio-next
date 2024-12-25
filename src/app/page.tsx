@@ -1,3 +1,4 @@
+import { EmailButton } from "@/components/EmailButton";
 import Image from "next/image";
 
 export default function Home() {
@@ -17,16 +18,7 @@ export default function Home() {
             />
           </a>
 
-          <button className="flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none">
-            <Image
-              aria-hidden
-              src="/email.svg"
-              alt="Email icon"
-              width={14}
-              height={14}
-            />
-            <span className="pt-0.5">erick.gus@gmail.com</span>
-          </button>
+          <EmailButton />
         </div>
       </header>
 
