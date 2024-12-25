@@ -91,7 +91,7 @@ export default function Home() {
               alt="QSMP.co website screenshot"
               width={1080}
               height={408}
-              className="h-[25.5rem] w-full object-cover"
+              className="h-[25.5rem] w-full object-cover rounded"
             />
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
@@ -191,7 +191,7 @@ export default function Home() {
               alt="MyContacts website screenshot"
               width={1080}
               height={408}
-              className="h-[25.5rem] w-full object-cover"
+              className="h-[25.5rem] w-full object-cover rounded"
             />
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
