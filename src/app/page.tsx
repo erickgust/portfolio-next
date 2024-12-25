@@ -31,68 +31,74 @@ export default function Home() {
       </header>
 
       <main>
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 min-h-[calc(100vh-100px)] grid place-items-center">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 min-h-[calc(100vh-90px)] grid place-items-center">
           <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
-            Passionate front-end developer, eager to 
-            use his skills on challenging projects that 
+            Passionate front-end developer, eager to
+            use his skills on challenging projects that
             can have a positive impact on people&apos;s lives.
           </h1>
         </section>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 flex gap-4 justify-between py-12">
-          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
-            <Image
-              aria-hidden
-              src="/dev.svg"
-              alt="Development icon"
-              width={32}
-              height={32}
-            />
+        <div className="border-y border-white border-opacity-5">
+          <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 flex gap-4 justify-between">
+            <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+              <Image
+                aria-hidden
+                src="/dev.svg"
+                alt="Development icon"
+                width={32}
+                height={32}
+              />
 
-            <div>
-              <strong className="font-bold text-2xl mb-4 inline-block">Development</strong>
-              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
-            </div>
-          </article>
-          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
-            <Image
-              aria-hidden
-              src="/app.svg"
-              alt="Web and Mobile apps icon"
-              width={32}
-              height={32}
-            />
+              <div>
+                <strong className="font-bold text-2xl mb-4 inline-block">Development</strong>
+                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+              </div>
+            </article>
+            <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+              <Image
+                aria-hidden
+                src="/app.svg"
+                alt="Web and Mobile apps icon"
+                width={32}
+                height={32}
+              />
 
-            <div>
-              <strong className="font-bold text-2xl mb-4 inline-block">Web and Mobile apps</strong>
-              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
-            </div>
-          </article>
-          <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
-            <Image
-              aria-hidden
-              src="/tools.svg"
-              alt="Tools icon"
-              width={32}
-              height={32}
-            />
+              <div>
+                <strong className="font-bold text-2xl mb-4 inline-block">Web and Mobile apps</strong>
+                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+              </div>
+            </article>
+            <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
+              <Image
+                aria-hidden
+                src="/tools.svg"
+                alt="Tools icon"
+                width={32}
+                height={32}
+              />
 
-            <div>
-              <strong className="font-bold text-2xl mb-4 inline-block">Attention to details</strong>
-              <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
-            </div>
-          </article>
-        </section>
+              <div>
+                <strong className="font-bold text-2xl mb-4 inline-block">Attention to details</strong>
+                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+              </div>
+            </article>
+          </section>
+        </div>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 py-40 space-y-44">
+        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 py-40 space-y-44 relative">
           <article>
-            <Image
-              src="/qsmp-bg.jpg"
-              alt="QSMP.co website screenshot"
-              width={1080}
-              height={408}
-              className="h-[25.5rem] w-full object-cover rounded"
-            />
+            <div className="relative">
+              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
+              <Image
+                src="/qsmp-bg.jpg"
+                alt="QSMP.co website screenshot"
+                width={1080}
+                height={408}
+                className="h-[25.5rem] w-full object-cover rounded"
+              />
+              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+            </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
               <div>
@@ -104,7 +110,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a 
+                  <a
                     href="https://qsmp.co/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -184,15 +190,19 @@ export default function Home() {
               </div>
             </div>
           </article>
-          
+
           <article>
-            <Image
-              src="/mycontacts-bg.jpg"
-              alt="MyContacts website screenshot"
-              width={1080}
-              height={408}
-              className="h-[25.5rem] w-full object-cover rounded"
-            />
+            <div className="relative">
+              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
+              <Image
+                src="/mycontacts-bg.jpg"
+                alt="MyContacts website screenshot"
+                width={1080}
+                height={408}
+                className="h-[25.5rem] w-full object-cover rounded"
+              />
+              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+            </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
               <div>
@@ -204,7 +214,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a 
+                  <a
                     href="#"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -274,7 +284,7 @@ export default function Home() {
                       PostgreSQL
                     </span>
                   </span>
-                  
+
                   <span
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#72B5FF] border-[#72B5FF]"
                   >
@@ -289,7 +299,7 @@ export default function Home() {
                       TypeScript
                     </span>
                   </span>
-                  
+
                   <span
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#B0F45E] border-[#B0F45E]"
                   >
@@ -308,15 +318,22 @@ export default function Home() {
               </div>
             </div>
           </article>
-          
+
           <article>
-            <Image
-              src="/calculator-bg.jpg"
-              alt="Calculator website screenshot"
-              width={1080}
-              height={408}
-              className="h-[25.5rem] w-full object-cover rounded"
-            />
+            <div className="relative">
+              <span className="block h-px absolute top-0 -inset-x-full bg-white opacity-5" />
+              <span className="block h-px absolute top-20 -inset-x-full bg-white opacity-5 -z-10" />
+
+              <Image
+                src="/calculator-bg.jpg"
+                alt="Calculator website screenshot"
+                width={1080}
+                height={408}
+                className="h-[25.5rem] w-full object-cover rounded"
+              />
+
+              <span className="block h-px absolute bottom-0 -inset-x-full bg-white opacity-5" />
+            </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
               <div>
@@ -328,7 +345,7 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a 
+                  <a
                     href="https://erickgust.github.io/calculator-js/"
                     rel="noopener noreferrer"
                     target="_blank"
@@ -398,7 +415,7 @@ export default function Home() {
                       CSS
                     </span>
                   </span>
-                  
+
                   <span
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FFEE64] border-[#FFEE64]"
                   >
@@ -442,7 +459,7 @@ export default function Home() {
               <p className="mt-4">Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
             </div>
           </article>
-          
+
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
@@ -465,7 +482,7 @@ export default function Home() {
               <p className="mt-4">Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.</p>
             </div>
           </article>
-          
+
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
@@ -490,7 +507,7 @@ export default function Home() {
           </article>
         </section>
       </main>
-      
+
       <footer className="max-w-screen-lg mx-auto border-x border-white border-opacity-5">
         <div className="text-[#DCD7CD] py-48 flex flex-col gap-8 items-center justify-center">
           <p className="text-2xl">Let’s work together!</p>
