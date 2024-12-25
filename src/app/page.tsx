@@ -144,7 +144,7 @@ export default function Home() {
               </div>
               <div />
               <div>
-                <div className="flex gap-4 justify-end max-w-80 flex-wrap ml-auto">
+                <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
                   <span
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8AD3C8] border-[#8AD3C8]"
                   >
@@ -244,7 +244,7 @@ export default function Home() {
               </div>
               <div />
               <div>
-                <div className="flex gap-4 justify-end max-w-80 flex-wrap ml-auto">
+                <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
                   <span
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#88E6FF] border-[#88E6FF]"
                   >
@@ -302,6 +302,115 @@ export default function Home() {
                     />
                     <span className="pt-0.5">
                       Node.js
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          
+          <article>
+            <Image
+              src="/calculator-bg.jpg"
+              alt="Calculator website screenshot"
+              width={1080}
+              height={408}
+              className="h-[25.5rem] w-full object-cover rounded"
+            />
+
+            <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
+              <div>
+                <strong className="font-semibold text-3.5xl text-[#DCD7CD] leading-none">Calculator</strong>
+
+                <p className="mt-4">
+                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius.  <br />
+                  Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.
+                </p>
+
+                <div className="flex gap-4 mt-8">
+                  <a 
+                    href="https://erickgust.github.io/calculator-js/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/arrow.svg"
+                      alt="Link icon"
+                      width={14}
+                      height={14}
+                    />
+                    <span className="pt-0.5">
+                      See live
+                    </span>
+                  </a>
+
+                  <a
+                    href="https://github.com/erickgust/calculator-js"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/repository.svg"
+                      alt="Link icon"
+                      width={14}
+                      height={14}
+                    />
+
+                    <span className="pt-0.5">
+                      GitHub repository
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div />
+              <div>
+                <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
+                  <span
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FF8753] border-[#FF8753]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/techs/html.svg"
+                      alt="HTML icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">
+                      HTML
+                    </span>
+                  </span>
+
+                  <span
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#7BA2FF] border-[#7BA2FF]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/techs/css.svg"
+                      alt="CSS icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">
+                      CSS
+                    </span>
+                  </span>
+                  
+                  <span
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FFEE64] border-[#FFEE64]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/techs/javascript.svg"
+                      alt="JavaScript icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">
+                      JavaScript
                     </span>
                   </span>
                 </div>
