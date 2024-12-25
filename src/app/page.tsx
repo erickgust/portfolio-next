@@ -84,7 +84,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="max-w-screen-lg mx-auto py-40">
+        <section className="max-w-screen-lg mx-auto py-40 space-y-44">
           <article>
             <Image
               src="/qsmp-bg.jpg"
