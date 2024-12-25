@@ -84,6 +84,108 @@ export default function Home() {
           </article>
         </section>
 
+        <section className="max-w-screen-lg mx-auto py-40">
+          <article>
+            <Image
+              src="/qsmp-bg.jpg"
+              alt="QSMP.co website screenshot"
+              width={1080}
+              height={408}
+              className="h-[25.5rem] w-full object-cover"
+            />
+
+            <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
+              <div>
+                <strong className="font-semibold text-3.5xl text-[#DCD7CD] leading-none">QSMP.co</strong>
+
+                <p className="mt-4">
+                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius.  <br />
+                  Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.
+                </p>
+
+                <div className="flex gap-4 mt-8">
+                  <a 
+                    href="https://qsmp.co/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/arrow.svg"
+                      alt="Link icon"
+                      width={14}
+                      height={14}
+                    />
+                    <span className="pt-0.5">
+                      See live
+                    </span>
+                  </a>
+
+                  <a
+                    href="https://github.com/erickgust/qsmp.co"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/repository.svg"
+                      alt="Link icon"
+                      width={14}
+                      height={14}
+                    />
+
+                    <span className="pt-0.5">
+                      GitHub repository
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div />
+              <div>
+                <div className="flex gap-4 justify-end">
+                  <span
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8AD3C8] border-[#8AD3C8]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/techs/tailwind.svg"
+                      alt="Tailwind CSS icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">
+                      Tailwind
+                    </span>
+                  </span>
+
+                  <span
+                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#88E6FF] border-[#88E6FF]"
+                  >
+                    <Image
+                      aria-hidden
+                      src="/techs/react.svg"
+                      alt="React icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">
+                      React.js
+                    </span>
+                  </span>
+                </div>
+
+                <p className="mt-20">
+                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl accumsan euismod sit morbi pulvinar. Accumsan elit in dictum suspendisse varius. <br />
+                  Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius. <br />
+                  Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis varius.
+                </p>
+              </div>
+            </div>
+          </article>
+        </section>
+
         <section className="max-w-screen-lg mx-auto space-y-16 py-12">
           <article>
             <div className="flex flex-col gap-2">
