@@ -21,6 +21,8 @@ export default {
         "5.5xl": "3.25rem",
         // 26px
         "2.5xl": "1.625rem",
+        // 32px
+        "3.5xl": "2rem",
       },
       maxWidth: {
         "screen-lg": "1080px",
