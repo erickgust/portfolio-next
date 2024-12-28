@@ -44,7 +44,7 @@ export default function Home() {
 
               <div>
                 <strong className="font-bold text-2xl mb-4 inline-block">Development</strong>
-                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+                <p>Building impactful, high-performance applications with cutting-edge technologies.</p>
               </div>
             </article>
             <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
@@ -58,7 +58,7 @@ export default function Home() {
 
               <div>
                 <strong className="font-bold text-2xl mb-4 inline-block">Web and Mobile apps</strong>
-                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+                <p>Turning your ideas into amazing mobile and web apps with responsiveness and accessibility.</p>
               </div>
             </article>
             <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
@@ -71,8 +71,8 @@ export default function Home() {
               />
 
               <div>
-                <strong className="font-bold text-2xl mb-4 inline-block">Attention to details</strong>
-                <p>Integer eget neque faucibus nulla eget sit diam. Volutpat phasellus nec venenatis massa turpis.</p>
+                <strong className="font-bold text-2xl mb-4 inline-block">Detail-Driven Design</strong>
+                <p>Crafting interfaces with design fidelity, following the pixel-perfect concept.</p>
               </div>
             </article>
           </section>
