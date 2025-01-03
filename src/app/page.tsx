@@ -27,8 +27,8 @@ export default function Home() {
         </div>
       </header>
 
-      <main>
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 min-h-[calc(100vh-90px)] grid place-items-center">
+      <main className="max-w-screen-lg mx-auto border-x border-white border-opacity-5">
+        <section className="min-h-[calc(100vh-90px)] grid place-items-center">
           <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
             Passionate front-end developer, eager to use his skills on
             challenging projects that can have a positive impact on
@@ -36,7 +36,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 flex gap-4 justify-between relative">
+        <section className="flex gap-4 justify-between relative">
           <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
 
           <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
@@ -100,7 +100,7 @@ export default function Home() {
           <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
         </section>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 py-40 space-y-44 relative">
+        <section className="py-40 space-y-44 relative">
           <article>
             <div className="relative">
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
@@ -423,7 +423,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="max-w-screen-lg mx-auto border-x border-white border-opacity-5 space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-white before:opacity-5 after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-white after:opacity-5">
+        <section className="space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-white before:opacity-5 after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-white after:opacity-5">
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
