@@ -1,14 +1,14 @@
-'use client'
+"use client";
 
-import Image from "next/image"
+import Image from "next/image";
 
-export function EmailButton () {
-  async function copyToClipboard (text: string) {
+export function EmailButton() {
+  async function copyToClipboard(text: string) {
     try {
-      await navigator.clipboard.writeText(text)
-      console.log('Email copied to clipboard')
+      await navigator.clipboard.writeText(text);
+      console.log("Email copied to clipboard");
     } catch {
-      console.error('Failed to copy email to clipboard')
+      console.error("Failed to copy email to clipboard");
     }
   }
 
@@ -20,12 +20,16 @@ export function EmailButton () {
         alt="Email icon"
         width={14}
         height={14}
+        priority
       />
-      <span className="pt-0.5"
+      <span
+        className="pt-0.5"
         onClick={(e) => {
-          copyToClipboard(e.currentTarget.innerText)
+          copyToClipboard(e.currentTarget.innerText);
         }}
-      >erick.prussak@gmail.com</span>
+      >
+        erick.prussak@gmail.com
+      </span>
     </button>
-  )
+  );
 }
