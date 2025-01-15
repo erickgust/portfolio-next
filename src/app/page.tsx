@@ -441,16 +441,16 @@ export default function Home() {
               </strong>
 
               <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">
-                June 2023 - March 2024
+                October 2023 - April 2024
               </i>
             </div>
 
             <div className="max-w-prose">
               <p className="mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                suspendisse varius. Integer eget neque faucibus nulla eget sit
-                diam. Volutpat phasellus nec venenatis massa turpis varius.
+                As part of an international team, I contributed to multilingual
+                projects built with Next.js and TypeScript, designed to handle
+                high volumes of simultaneous users, with a strong focus on
+                optimizing user experience and performance.
               </p>
             </div>
           </article>
@@ -471,16 +471,16 @@ export default function Home() {
               </strong>
 
               <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">
-                November 2022 - May 2023
+                November 2022 - April 2023
               </i>
             </div>
 
             <div className="max-w-prose">
               <p className="mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                suspendisse varius. Integer eget neque faucibus nulla eget sit
-                diam. Volutpat phasellus nec venenatis massa turpis varius.
+                At UpBase, I demonstrated my expertise in NextJS, React Native
+                and TypeScript by contributing to the development of mobile and
+                web projects. I worked closely with client feedback to align
+                with their needs and consistently deliver results.
               </p>
             </div>
           </article>
@@ -501,16 +501,19 @@ export default function Home() {
               </strong>
 
               <i className="text-[#DCD7CD] font-normal not-italic leading-none text-xl">
-                November 2022 - December 2024
+                July 2022 - January 2025
               </i>
             </div>
 
             <div className="max-w-prose">
               <p className="mt-4">
-                Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                suspendisse varius. Integer eget neque faucibus nulla eget sit
-                diam. Volutpat phasellus nec venenatis massa turpis varius.
+                I had the opportunity to learn various stages of software
+                development and management, from planning and collecting
+                requirements to deployment and maintenance. I also learnt how
+                interface design is planned, from wireframes to low- and
+                high-fidelity prototypes. Furthermore, I deepened my knowledge
+                of algorithms and data structures using Java and C, as well as
+                database management with MySQL.
               </p>
             </div>
           </article>
