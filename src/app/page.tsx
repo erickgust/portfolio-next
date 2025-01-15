@@ -541,7 +541,7 @@ export default function Home() {
           <span className="pt-0.5">
             Designed by{" "}
             <a
-              href="https://bento.me/miel"
+              href="https://maelle.works"
               rel="noopener noreferrer"
               target="_blank"
             >
