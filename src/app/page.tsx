@@ -108,25 +108,31 @@ export default function Home() {
               <Image
                 src="/qsmp-bg.jpg"
                 alt="QSMP.co website screenshot"
-                width={1080}
-                height={408}
+                width={1513}
+                height={572}
                 className="h-[25.5rem] w-full object-cover rounded"
+                quality={100}
               />
               <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
             </div>
 
-            <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
+            <div className="mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2">
               <div>
                 <strong className="font-semibold text-3.5xl text-[#DCD7CD] leading-none">
                   QSMP.co
                 </strong>
 
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                  accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                  suspendisse varius. <br />
-                  Integer eget neque faucibus nulla eget sit diam. Volutpat
-                  phasellus nec venenatis massa turpis varius.
+                  I was the developer responsible for QSMP.co, the official
+                  portal of the QSMP project, the first multilingual Minecraft
+                  server with real-time translation, connecting content creators
+                  from different regions and languages.
+                </p>
+                <p>
+                  The website&apos;s goal was to centralize the main information
+                  about the server and its participants, offering a list of
+                  current members with links to their social media profiles, as
+                  well as sections dedicated to project updates.
                 </p>
 
                 <div className="flex gap-4 mt-8">
@@ -178,28 +184,39 @@ export default function Home() {
                     <span className="pt-0.5">Tailwind</span>
                   </span>
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#88E6FF] border-[#88E6FF]">
+                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#72B5FF] border-[#72B5FF]">
                     <Image
                       aria-hidden
-                      src="/techs/react.svg"
+                      src="/techs/typescript.svg"
+                      alt="TypeScript icon"
+                      width={16}
+                      height={16}
+                    />
+                    <span className="pt-0.5">TypeScript</span>
+                  </span>
+
+                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FFF] border-[#FFF]">
+                    <Image
+                      aria-hidden
+                      src="/techs/nextjs.svg"
                       alt="React icon"
                       width={16}
                       height={16}
                     />
-                    <span className="pt-0.5">React.js</span>
+                    <span className="pt-0.5">Next.js</span>
                   </span>
                 </div>
-
                 <p className="mt-20">
-                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                  accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                  suspendisse varius. <br />
-                  Integer eget neque faucibus nulla eget sit diam. Volutpat
-                  phasellus nec venenatis massa turpis varius. <br />
-                  Integer eget neque faucibus nulla eget sit diam. Volutpat
-                  phasellus nec venenatis massa turpis varius.Integer eget neque
-                  faucibus nulla eget sit diam. Volutpat phasellus nec venenatis
-                  massa turpis varius.
+                  For development, I chose Next.js due to my familiarity with
+                  the tool and its ability to offer high performance and SEO
+                  optimization, both essential for the project. For styling, I
+                  used Tailwind CSS, ensuring flexibility and efficiency in
+                  design.
+                </p>
+                <p>
+                  These technologies were essential to ensuring productivity and
+                  efficiency while delivering a responsive, multi-language
+                  supported website with excellent performance.
                 </p>
               </div>
             </div>
