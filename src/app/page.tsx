@@ -226,46 +226,30 @@ export default function Home() {
             <div className="relative">
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
               <Image
-                src="/mycontacts-bg.jpg"
+                src="/mycontacts-bg.png"
                 alt="MyContacts website screenshot"
-                width={1080}
-                height={408}
+                width={1920}
+                height={726}
                 className="h-[25.5rem] w-full object-cover rounded"
+                quality={100}
               />
               <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
             </div>
 
-            <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
+            <div className="mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2">
               <div>
                 <strong className="font-semibold text-3.5xl text-[#DCD7CD] leading-none">
                   MyContacts
                 </strong>
 
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                  accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                  suspendisse varius. <br />
-                  Integer eget neque faucibus nulla eget sit diam. Volutpat
-                  phasellus nec venenatis massa turpis varius.
+                  MyContacts was project where I explored React and React Router
+                  more in-depth by building a contact management feature that
+                  lets you create, edit, delete, and view contacts, as well as
+                  organize them by categories.
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a
-                    href="#"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
-                  >
-                    <Image
-                      aria-hidden
-                      src="/arrow.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                    />
-                    <span className="pt-0.5">See live</span>
-                  </a>
-
                   <a
                     href="https://github.com/erickgust/my-contacts-front"
                     rel="noopener noreferrer"
@@ -331,6 +315,12 @@ export default function Home() {
                     <span className="pt-0.5">Node.js</span>
                   </span>
                 </div>
+
+                <p className="mt-20">
+                  I also had the opportunity to develop a REST API in Node.js
+                  with Express, which connects to a Docker environment running
+                  PostgreSQL.
+                </p>
               </div>
             </div>
           </article>
