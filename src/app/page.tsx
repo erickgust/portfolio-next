@@ -552,7 +552,7 @@ export default function Home() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Miel
+              Maëlle
             </a>
           </span>
         </div>
