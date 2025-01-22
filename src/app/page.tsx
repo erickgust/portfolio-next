@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8 border-x border-white border-opacity-5">
+      <header className="flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8 border-x border-[#1B1B1B]">
         <strong className="font-normal text-sm">Erick Gustavo</strong>
 
         <div className="flex gap-4 text-sm items-center">
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="max-w-screen-lg mx-auto border-x border-white border-opacity-5">
+      <main className="max-w-screen-lg mx-auto border-x border-[#1B1B1B]">
         <section className="min-h-[calc(100vh-90px)] grid place-items-center">
           <h1 className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight">
             Passionate front-end developer, eager to use his skills on
@@ -38,7 +38,7 @@ export default function Home() {
         </section>
 
         <section className="flex gap-4 justify-between relative">
-          <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+          <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
 
           <article className="h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between">
             <Image
@@ -98,13 +98,13 @@ export default function Home() {
             </div>
           </article>
 
-          <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+          <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
         </section>
 
         <section className="py-40 space-y-44 relative">
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
               <Image
                 src="/qsmp-bg.jpg"
                 alt="QSMP.co website screenshot"
@@ -113,7 +113,7 @@ export default function Home() {
                 className="h-[25.5rem] w-full object-cover rounded"
                 quality={100}
               />
-              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2">
@@ -224,7 +224,7 @@ export default function Home() {
 
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
               <Image
                 src="/mycontacts-bg.png"
                 alt="MyContacts website screenshot"
@@ -233,7 +233,7 @@ export default function Home() {
                 className="h-[25.5rem] w-full object-cover rounded"
                 quality={100}
               />
-              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2">
@@ -327,8 +327,7 @@ export default function Home() {
 
           <article>
             <div className="relative">
-              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
-              <span className="block h-px absolute top-20 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5 -z-10" />
+              <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
 
               <Image
                 src="/calculator-bg.jpg"
@@ -338,7 +337,7 @@ export default function Home() {
                 className="h-[25.5rem] w-full object-cover rounded"
               />
 
-              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-white opacity-5" />
+              <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
             </div>
 
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
@@ -431,7 +430,7 @@ export default function Home() {
           </article>
         </section>
 
-        <section className="space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-white before:opacity-5 after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-white after:opacity-5">
+        <section className="space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-[#1B1B1B] after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-[#1B1B1B]">
           <article>
             <div className="flex flex-col gap-2">
               <strong className="font-semibold text-2.5xl text-[#DCD7CD] leading-none">
@@ -527,7 +526,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="max-w-screen-lg mx-auto border-x border-white border-opacity-5">
+      <footer className="max-w-screen-lg mx-auto border-x border-[#1B1B1B]">
         <div className="text-[#DCD7CD] py-48 flex flex-col gap-8 items-center justify-center">
           <p className="text-2xl">Let’s work together!</p>
           <p className="text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text">
@@ -535,7 +534,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="group text-xs flex gap-1.5 text-[#57544E] items-center lowercase p-8 justify-center leading-none">
+        <div className="group text-xs flex gap-1.5 text-[#57544E] items-center lowercase p-8 justify-center leading-none relative">
+          <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
+
           <span className="pt-0.5">Developed by Erick</span>
           <Image
             aria-hidden
