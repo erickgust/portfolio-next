@@ -1,4 +1,5 @@
 import { EmailButton } from "@/components/EmailButton";
+import { TechTag } from "@/components/TechTag";
 import Image from "next/image";
 
 export default function Home() {
@@ -173,38 +174,23 @@ export default function Home() {
               <div />
               <div>
                 <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8AD3C8] border-[#8AD3C8]">
-                    <Image
-                      aria-hidden
-                      src="/techs/tailwind.svg"
-                      alt="Tailwind CSS icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">Tailwind</span>
-                  </span>
+                  <TechTag
+                    color="#8AD3C8"
+                    title="Tailwind"
+                    img={{ src: "/techs/tailwind.svg", alt: "Tailwind CSS icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#72B5FF] border-[#72B5FF]">
-                    <Image
-                      aria-hidden
-                      src="/techs/typescript.svg"
-                      alt="TypeScript icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">TypeScript</span>
-                  </span>
+                  <TechTag
+                    color="#72B5FF"
+                    title="TypeScript"
+                    img={{ src: "/techs/typescript.svg", alt: "TypeScript icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FFF] border-[#FFF]">
-                    <Image
-                      aria-hidden
-                      src="/techs/nextjs.svg"
-                      alt="React icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">Next.js</span>
-                  </span>
+                  <TechTag
+                    color="#FFF"
+                    title="Next.js"
+                    img={{ src: "/techs/nextjs.svg", alt: "Next.js icon" }}
+                  />
                 </div>
                 <p className="mt-20">
                   For development, I chose Next.js due to my familiarity with
@@ -271,49 +257,29 @@ export default function Home() {
               <div />
               <div>
                 <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#88E6FF] border-[#88E6FF]">
-                    <Image
-                      aria-hidden
-                      src="/techs/react.svg"
-                      alt="React icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">React.js</span>
-                  </span>
+                  <TechTag
+                    color="#88E6FF"
+                    title="React.js"
+                    img={{ src: "/techs/react.svg", alt: "React icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#A6C6E0] border-[#A6C6E0]">
-                    <Image
-                      aria-hidden
-                      src="/techs/postgresql.svg"
-                      alt="PostgreSQL icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">PostgreSQL</span>
-                  </span>
+                  <TechTag
+                    color="#A6C6E0"
+                    title="PostgreSQL"
+                    img={{ src: "/techs/postgresql.svg", alt: "PostgreSQL icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#72B5FF] border-[#72B5FF]">
-                    <Image
-                      aria-hidden
-                      src="/techs/typescript.svg"
-                      alt="TypeScript icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">TypeScript</span>
-                  </span>
+                  <TechTag
+                    color="#72B5FF"
+                    title="TypeScript"
+                    img={{ src: "/techs/typescript.svg", alt: "TypeScript icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#B0F45E] border-[#B0F45E]">
-                    <Image
-                      aria-hidden
-                      src="/techs/node.svg"
-                      alt="Node.js icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">Node.js</span>
-                  </span>
+                  <TechTag
+                    color="#B0F45E"
+                    title="Node.js"
+                    img={{ src: "/techs/node.svg", alt: "Node.js icon" }}
+                  />
                 </div>
 
                 <p className="mt-20">
@@ -392,38 +358,23 @@ export default function Home() {
               <div />
               <div>
                 <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FF8753] border-[#FF8753]">
-                    <Image
-                      aria-hidden
-                      src="/techs/html.svg"
-                      alt="HTML icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">HTML</span>
-                  </span>
+                  <TechTag
+                    color="#FF8753"
+                    title="HTML"
+                    img={{ src: "/techs/html.svg", alt: "HTML icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#7BA2FF] border-[#7BA2FF]">
-                    <Image
-                      aria-hidden
-                      src="/techs/css.svg"
-                      alt="CSS icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">CSS</span>
-                  </span>
+                  <TechTag
+                    color="#7BA2FF"
+                    title="CSS"
+                    img={{ src: "/techs/css.svg", alt: "CSS icon" }}
+                  />
 
-                  <span className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#FFEE64] border-[#FFEE64]">
-                    <Image
-                      aria-hidden
-                      src="/techs/javascript.svg"
-                      alt="JavaScript icon"
-                      width={16}
-                      height={16}
-                    />
-                    <span className="pt-0.5">JavaScript</span>
-                  </span>
+                  <TechTag
+                    color="#FFEE64"
+                    title="JavaScript"
+                    img={{ src: "/techs/javascript.svg", alt: "JavaScript icon" }}
+                  />
                 </div>
               </div>
             </div>
