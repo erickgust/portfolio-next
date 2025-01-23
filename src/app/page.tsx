@@ -326,15 +326,15 @@ export default function Home() {
                 </strong>
 
                 <p className="mt-4">
-                  TMDB Movies is a project that lets you browse a paginated list
-                  of trending movies, filtered by various genres. By selecting a
+                  TMDB Movies is a project that lets you browse a list of
+                  trending movies, filtered by various genres. By selecting a
                   movie, you can view details such as rating, synopsis, cast,
                   genres, and certification.
                 </p>
 
                 <div className="flex gap-4 mt-8">
                   <a
-                    href="https://erickgust.github.io/calculator-js/"
+                    href="https://erickgust-tmdb.netlify.app/"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
@@ -350,7 +350,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://github.com/erickgust/calculator-js"
+                    href="https://github.com/erickgust/promobit-tmdb"
                     rel="noopener noreferrer"
                     target="_blank"
                     className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
