@@ -177,13 +177,19 @@ export default function Home() {
                   <TechTag
                     color="#8AD3C8"
                     title="Tailwind"
-                    img={{ src: "/techs/tailwind.svg", alt: "Tailwind CSS icon" }}
+                    img={{
+                      src: "/techs/tailwind.svg",
+                      alt: "Tailwind CSS icon",
+                    }}
                   />
 
                   <TechTag
                     color="#72B5FF"
                     title="TypeScript"
-                    img={{ src: "/techs/typescript.svg", alt: "TypeScript icon" }}
+                    img={{
+                      src: "/techs/typescript.svg",
+                      alt: "TypeScript icon",
+                    }}
                   />
 
                   <TechTag
@@ -266,13 +272,19 @@ export default function Home() {
                   <TechTag
                     color="#A6C6E0"
                     title="PostgreSQL"
-                    img={{ src: "/techs/postgresql.svg", alt: "PostgreSQL icon" }}
+                    img={{
+                      src: "/techs/postgresql.svg",
+                      alt: "PostgreSQL icon",
+                    }}
                   />
 
                   <TechTag
                     color="#72B5FF"
                     title="TypeScript"
-                    img={{ src: "/techs/typescript.svg", alt: "TypeScript icon" }}
+                    img={{
+                      src: "/techs/typescript.svg",
+                      alt: "TypeScript icon",
+                    }}
                   />
 
                   <TechTag
@@ -296,11 +308,12 @@ export default function Home() {
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
 
               <Image
-                src="/calculator-bg.jpg"
+                src="/tmdb-bg.png"
                 alt="Calculator website screenshot"
-                width={1080}
-                height={408}
+                width={2160}
+                height={816}
                 className="h-[25.5rem] w-full object-cover rounded"
+                quality={100}
               />
 
               <span className="block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
@@ -309,15 +322,14 @@ export default function Home() {
             <div className="mt-14 grid grid-cols-[1fr_230px_1fr]">
               <div>
                 <strong className="font-semibold text-3.5xl text-[#DCD7CD] leading-none">
-                  Calculator
+                  TMDB Movies
                 </strong>
 
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur. Id parturient nisl
-                  accumsan euismod sit morbi pulvinar. Accumsan elit in dictum
-                  suspendisse varius. <br />
-                  Integer eget neque faucibus nulla eget sit diam. Volutpat
-                  phasellus nec venenatis massa turpis varius.
+                  TMDB Movies is a project that lets you browse a paginated list
+                  of trending movies, filtered by various genres. By selecting a
+                  movie, you can view details such as rating, synopsis, cast,
+                  genres, and certification.
                 </p>
 
                 <div className="flex gap-4 mt-8">
@@ -373,9 +385,19 @@ export default function Home() {
                   <TechTag
                     color="#FFEE64"
                     title="JavaScript"
-                    img={{ src: "/techs/javascript.svg", alt: "JavaScript icon" }}
+                    img={{
+                      src: "/techs/javascript.svg",
+                      alt: "JavaScript icon",
+                    }}
                   />
                 </div>
+
+                <p className="mt-20">
+                  This project was built in TypeScript and React to explore
+                  React Query features combined with React Router. It also uses
+                  the Zod library to ensure type safety for data fetched from
+                  the TMDB API.
+                </p>
               </div>
             </div>
           </article>
