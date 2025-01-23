@@ -371,23 +371,26 @@ export default function Home() {
               <div>
                 <div className="flex gap-4 justify-end max-w-96 flex-wrap ml-auto">
                   <TechTag
-                    color="#FF8753"
-                    title="HTML"
-                    img={{ src: "/techs/html.svg", alt: "HTML icon" }}
+                    color="#88E6FF"
+                    title="React.js"
+                    img={{ src: "/techs/react.svg", alt: "React icon" }}
                   />
 
                   <TechTag
-                    color="#7BA2FF"
-                    title="CSS"
-                    img={{ src: "/techs/css.svg", alt: "CSS icon" }}
-                  />
-
-                  <TechTag
-                    color="#FFEE64"
-                    title="JavaScript"
+                    color="#72B5FF"
+                    title="TypeScript"
                     img={{
-                      src: "/techs/javascript.svg",
-                      alt: "JavaScript icon",
+                      src: "/techs/typescript.svg",
+                      alt: "TypeScript icon",
+                    }}
+                  />
+
+                  <TechTag
+                    color="#8AD3C8"
+                    title="Tailwind"
+                    img={{
+                      src: "/techs/tailwind.svg",
+                      alt: "Tailwind CSS icon",
                     }}
                   />
                 </div>
