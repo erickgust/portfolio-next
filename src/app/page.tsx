@@ -138,38 +138,16 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a
-                    href="https://qsmp.co/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
-                  >
-                    <Image
-                      aria-hidden
-                      src="/arrow.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                    />
-                    <span className="pt-0.5">See live</span>
-                  </a>
+                  <ProjectLink type="live" href="https://qsmp.co/">
+                    See live
+                  </ProjectLink>
 
-                  <a
+                  <ProjectLink
+                    type="github"
                     href="https://github.com/erickgust/qsmp.co"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
                   >
-                    <Image
-                      aria-hidden
-                      src="/repository.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                    />
-
-                    <span className="pt-0.5">GitHub repository</span>
-                  </a>
+                    GitHub repository
+                  </ProjectLink>
                 </div>
               </div>
               <div />
@@ -243,22 +221,12 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a
+                  <ProjectLink
+                    type="github"
                     href="https://github.com/erickgust/my-contacts-front"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
                   >
-                    <Image
-                      aria-hidden
-                      src="/repository.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                    />
-
-                    <span className="pt-0.5">GitHub repository</span>
-                  </a>
+                    GitHub repository
+                  </ProjectLink>
                 </div>
               </div>
               <div />
