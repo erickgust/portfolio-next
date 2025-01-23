@@ -337,16 +337,20 @@ export default function Home() {
                     href="https://erickgust-tmdb.netlify.app/"
                     rel="noopener noreferrer"
                     target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#E7BE6C] border-[#E7BE6C]"
+                    className="group relative inline-flex items-center justify-center gap-2.5 py-2 px-4 rounded-full border border-[#E7BE6C] text-[#E7BE6C] leading-none text-sm overflow-hidden"
                   >
+                    <span className="absolute inset-0 bg-[#E7BE6C] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-full" />
                     <Image
                       aria-hidden
                       src="/arrow.svg"
                       alt="Link icon"
                       width={14}
                       height={14}
+                      className="relative z-10 mix-blend-difference"
                     />
-                    <span className="pt-0.5">See live</span>
+                    <span className="pt-0.5 relative z-10 mix-blend-difference">
+                      See live
+                    </span>
                   </a>
 
                   <a
