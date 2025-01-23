@@ -235,10 +235,10 @@ export default function Home() {
                 </strong>
 
                 <p className="mt-4">
-                  MyContacts was a project where I explored React and React Router
-                  more in-depth by building a contact management feature that
-                  lets you create, edit, delete, and view contacts, as well as
-                  organize them by categories.
+                  MyContacts was a project where I explored React and React
+                  Router more in-depth by building a contact management feature
+                  that lets you create, edit, delete, and view contacts, as well
+                  as organize them by categories.
                 </p>
 
                 <div className="flex gap-4 mt-8">
