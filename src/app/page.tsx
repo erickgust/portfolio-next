@@ -1,4 +1,5 @@
 import { EmailButton } from "@/components/EmailButton";
+import { ProjectLink } from "@/components/ProjectLink";
 import { TechTag } from "@/components/TechTag";
 import Image from "next/image";
 
@@ -333,42 +334,19 @@ export default function Home() {
                 </p>
 
                 <div className="flex gap-4 mt-8">
-                  <a
+                  <ProjectLink
+                    type="live"
                     href="https://erickgust-tmdb.netlify.app/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="group relative inline-flex items-center justify-center gap-2.5 py-2 px-4 rounded-full border border-[#E7BE6C] text-[#E7BE6C] leading-none text-sm overflow-hidden"
                   >
-                    <span className="absolute inset-0 bg-[#E7BE6C] origin-left scale-x-0 rounded-full transition-transform duration-500 ease-in-out delay-75 group-hover:delay-0 group-hover:scale-x-100" />
-                    <Image
-                      aria-hidden
-                      src="/arrow.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                      className="relative z-10 mix-blend-difference"
-                    />
-                    <span className="pt-0.5 relative z-10 mix-blend-difference">
-                      See live
-                    </span>
-                  </a>
+                    See live
+                  </ProjectLink>
 
-                  <a
+                  <ProjectLink
+                    type="github"
                     href="https://github.com/erickgust/promobit-tmdb"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    className="inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm text-[#8E9AE1] border-[#8E9AE1]"
                   >
-                    <Image
-                      aria-hidden
-                      src="/repository.svg"
-                      alt="Link icon"
-                      width={14}
-                      height={14}
-                    />
-
-                    <span className="pt-0.5">GitHub repository</span>
-                  </a>
+                    GitHub repository
+                  </ProjectLink>
                 </div>
               </div>
               <div />
