@@ -235,7 +235,7 @@ export default function Home() {
                 </strong>
 
                 <p className="mt-4">
-                  MyContacts was project where I explored React and React Router
+                  MyContacts was a project where I explored React and React Router
                   more in-depth by building a contact management feature that
                   lets you create, edit, delete, and view contacts, as well as
                   organize them by categories.
