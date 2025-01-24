@@ -4,7 +4,12 @@
 
 :root {
   --background: #121212;
-  --foreground: #BFBAB0;
+  --foreground: #bfbab0;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
