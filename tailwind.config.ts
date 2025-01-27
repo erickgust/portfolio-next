@@ -25,7 +25,7 @@ export default {
         "3.5xl": "2rem",
       },
       maxWidth: {
-        "screen-lg": "1080px",
+        "screen-lg": "1065px",
       }
     },
   },
