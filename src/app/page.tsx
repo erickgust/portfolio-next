@@ -23,7 +23,7 @@ export default function Home() {
               alt='GitHub logo'
               width={16}
               height={16}
-              className='size-4'
+              className='max-w-max'
               priority
             />
           </a>
@@ -33,12 +33,32 @@ export default function Home() {
       </header>
 
       <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
-        <section className='grid min-h-[calc(100vh-90px)] place-items-center'>
-          <h1 className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text text-5.5xl leading-tight text-transparent'>
+        <section className='grid min-h-[calc(100vh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
+          <h1 className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
             Passionate front-end developer, eager to use his skills on
             challenging projects that can have a positive impact on
             people&apos;s lives.
           </h1>
+        </section>
+
+        <section className='flex items-center justify-between gap-4 sm:hidden'>
+          <EmailButton />
+
+          <a
+            href='https://github.com/erickgust'
+            rel='noopener noreferrer'
+            target='_blank'
+            className='inline-block rounded-full border p-3.5 sm:p-2'
+          >
+            <Image
+              src='/github.svg'
+              alt='GitHub logo'
+              width={16}
+              height={16}
+              className='max-w-max'
+              priority
+            />
+          </a>
         </section>
 
         <section className='relative flex justify-between gap-4'>
