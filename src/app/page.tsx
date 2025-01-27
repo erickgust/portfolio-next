@@ -5,11 +5,13 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='min-h-screen overflow-x-hidden'>
-      <header className='mx-auto flex max-w-screen-lg items-center justify-between border-x border-[#1B1B1B] py-8 text-[#DCD7CD]'>
-        <strong className='text-sm font-normal'>Erick Gustavo</strong>
+    <div className='min-h-screen overflow-x-hidden px-11'>
+      <header className='mx-auto flex max-w-screen-lg items-center justify-between border-x border-[#1B1B1B] py-16 text-[#DCD7CD] sm:py-8'>
+        <strong className='text-base font-normal sm:text-sm'>
+          Erick Gustavo
+        </strong>
 
-        <div className='flex items-center gap-4 text-sm'>
+        <div className='hidden items-center gap-4 text-sm sm:flex'>
           <a
             href='https://github.com/erickgust'
             rel='noopener noreferrer'
