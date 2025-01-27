@@ -1,10 +1,10 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 export default {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
@@ -13,21 +13,21 @@ export default {
         bold: '750',
       },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
       },
       fontSize: {
         // 52px
-        "5.5xl": "3.25rem",
+        '5.5xl': '3.25rem',
         // 26px
-        "2.5xl": "1.625rem",
+        '2.5xl': '1.625rem',
         // 32px
-        "3.5xl": "2rem",
+        '3.5xl': '2rem',
       },
       maxWidth: {
-        "screen-lg": "1065px",
-      }
+        'screen-lg': '1065px',
+      },
     },
   },
   plugins: [],
-} satisfies Config;
+} satisfies Config

@@ -1,13 +1,13 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 type TechTagProps = {
-  color: `#${string}`;
-  title: string;
+  color: `#${string}`
+  title: string
   img: {
-    src: string;
-    alt: string;
-  };
-};
+    src: string
+    alt: string
+  }
+}
 
 export function TechTag(props: TechTagProps) {
   return (
@@ -24,7 +24,7 @@ export function TechTag(props: TechTagProps) {
         width={16}
         height={16}
       />
-      <span className="pt-0.5">{props.title}</span>
+      <span className='pt-0.5'>{props.title}</span>
     </span>
-  );
+  )
 }
