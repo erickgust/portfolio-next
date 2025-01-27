@@ -108,10 +108,10 @@ export default function Home() {
             <div className="relative">
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
               <Image
-                src="/qsmp-bg.jpg"
-                alt="QSMP.co website screenshot"
-                width={1513}
-                height={572}
+                src="/qsmp-desktop.png"
+                alt="QSMP.co website"
+                width={1063}
+                height={408}
                 className="h-[25.5rem] w-full object-cover rounded"
                 quality={100}
               />
@@ -197,10 +197,10 @@ export default function Home() {
             <div className="relative">
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
               <Image
-                src="/mycontacts-bg.png"
-                alt="MyContacts website screenshot"
-                width={1920}
-                height={726}
+                src="/mycontacts-desktop.png"
+                alt="MyContacts website"
+                width={1063}
+                height={408}
                 className="h-[25.5rem] w-full object-cover rounded"
                 quality={100}
               />
@@ -277,10 +277,10 @@ export default function Home() {
               <span className="block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10" />
 
               <Image
-                src="/tmdb-bg.png"
-                alt="Calculator website screenshot"
-                width={2160}
-                height={816}
+                src="/tmdb-desktop.png"
+                alt="TMDB Movies website"
+                width={1063}
+                height={408}
                 className="h-[25.5rem] w-full object-cover rounded"
                 quality={100}
               />
