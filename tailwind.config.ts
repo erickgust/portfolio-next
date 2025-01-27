@@ -17,12 +17,12 @@ export default {
         foreground: 'var(--foreground)',
       },
       fontSize: {
-        // 52px
-        '5.5xl': '3.25rem',
+        // 50px
+        '5.5xl': ['3.125rem', '3.75rem'],
         // 26px
         '2.5xl': '1.625rem',
         // 32px
-        '3.5xl': '2rem',
+        '3.5xl': ['2rem', '2.5rem'],
       },
       maxWidth: {
         'screen-lg': '1065px',
