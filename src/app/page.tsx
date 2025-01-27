@@ -41,7 +41,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className='flex items-center justify-between gap-4 sm:hidden'>
+        <section className='mb-24 flex items-center justify-between gap-4 sm:hidden'>
           <EmailButton />
 
           <a
@@ -61,10 +61,10 @@ export default function Home() {
           </a>
         </section>
 
-        <section className='relative flex justify-between gap-4'>
+        <section className='relative flex flex-col justify-between gap-12 md:flex-row md:flex-wrap'>
           <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
 
-          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
+          <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
               aria-hidden
               src='/dev.svg'
@@ -74,16 +74,16 @@ export default function Home() {
             />
 
             <div>
-              <strong className='mb-4 inline-block text-2xl font-bold'>
+              <strong className='mb-4 inline-block text-1.5xl font-bold sm:text-2xl'>
                 Development
               </strong>
-              <p>
+              <p className='text-sm sm:text-base'>
                 Building impactful, high-performance applications with
                 cutting-edge technologies.
               </p>
             </div>
           </article>
-          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
+          <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
               aria-hidden
               src='/app.svg'
@@ -93,16 +93,16 @@ export default function Home() {
             />
 
             <div>
-              <strong className='mb-4 inline-block text-2xl font-bold'>
+              <strong className='mb-4 inline-block text-1.5xl font-bold sm:text-2xl'>
                 Web and Mobile apps
               </strong>
-              <p>
+              <p className='text-sm sm:text-base'>
                 Turning your ideas into amazing mobile and web apps with
                 responsiveness and accessibility.
               </p>
             </div>
           </article>
-          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
+          <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
               aria-hidden
               src='/tools.svg'
@@ -112,10 +112,10 @@ export default function Home() {
             />
 
             <div>
-              <strong className='mb-4 inline-block text-2xl font-bold'>
+              <strong className='mb-4 inline-block text-1.5xl font-bold sm:text-2xl'>
                 Detail-Driven Design
               </strong>
-              <p>
+              <p className='text-sm sm:text-base'>
                 Crafting interfaces with design fidelity, following the
                 pixel-perfect concept.
               </p>
