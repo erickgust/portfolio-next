@@ -15,7 +15,7 @@ export function TechTag(props: TechTagProps) {
       style={{
         ['--tag-color' as string]: props.color,
       }}
-      className='text-[--tag-color] border-[--tag-color] inline-flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none text-sm'
+      className='inline-flex items-center justify-center gap-2.5 rounded-full border border-[--tag-color] px-4 py-2 text-sm leading-none text-[--tag-color]'
     >
       <Image
         aria-hidden

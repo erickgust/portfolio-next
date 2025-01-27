@@ -6,10 +6,10 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div className='min-h-screen overflow-x-hidden'>
-      <header className='flex justify-between items-center text-[#DCD7CD] max-w-screen-lg mx-auto py-8 border-x border-[#1B1B1B]'>
-        <strong className='font-normal text-sm'>Erick Gustavo</strong>
+      <header className='mx-auto flex max-w-screen-lg items-center justify-between border-x border-[#1B1B1B] py-8 text-[#DCD7CD]'>
+        <strong className='text-sm font-normal'>Erick Gustavo</strong>
 
-        <div className='flex gap-4 text-sm items-center'>
+        <div className='flex items-center gap-4 text-sm'>
           <a
             href='https://github.com/erickgust'
             rel='noopener noreferrer'
@@ -30,19 +30,19 @@ export default function Home() {
         </div>
       </header>
 
-      <main className='max-w-screen-lg mx-auto border-x border-[#1B1B1B]'>
-        <section className='min-h-[calc(100vh-90px)] grid place-items-center'>
-          <h1 className='text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text leading-tight'>
+      <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
+        <section className='grid min-h-[calc(100vh-90px)] place-items-center'>
+          <h1 className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text text-5.5xl leading-tight text-transparent'>
             Passionate front-end developer, eager to use his skills on
             challenging projects that can have a positive impact on
             people&apos;s lives.
           </h1>
         </section>
 
-        <section className='flex gap-4 justify-between relative'>
-          <span className='block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+        <section className='relative flex justify-between gap-4'>
+          <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
 
-          <article className='h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between'>
+          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
             <Image
               aria-hidden
               src='/dev.svg'
@@ -52,7 +52,7 @@ export default function Home() {
             />
 
             <div>
-              <strong className='font-bold text-2xl mb-4 inline-block'>
+              <strong className='mb-4 inline-block text-2xl font-bold'>
                 Development
               </strong>
               <p>
@@ -61,7 +61,7 @@ export default function Home() {
               </p>
             </div>
           </article>
-          <article className='h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between'>
+          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
             <Image
               aria-hidden
               src='/app.svg'
@@ -71,7 +71,7 @@ export default function Home() {
             />
 
             <div>
-              <strong className='font-bold text-2xl mb-4 inline-block'>
+              <strong className='mb-4 inline-block text-2xl font-bold'>
                 Web and Mobile apps
               </strong>
               <p>
@@ -80,7 +80,7 @@ export default function Home() {
               </p>
             </div>
           </article>
-          <article className='h-72 grow-0 shrink basis-80 bg-opacity-90 bg-[#161616] rounded border p-8 border-[#DCD7CD] border-opacity-30 flex flex-col justify-between'>
+          <article className='flex h-72 shrink grow-0 basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8'>
             <Image
               aria-hidden
               src='/tools.svg'
@@ -90,7 +90,7 @@ export default function Home() {
             />
 
             <div>
-              <strong className='font-bold text-2xl mb-4 inline-block'>
+              <strong className='mb-4 inline-block text-2xl font-bold'>
                 Detail-Driven Design
               </strong>
               <p>
@@ -100,27 +100,27 @@ export default function Home() {
             </div>
           </article>
 
-          <span className='block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+          <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
         </section>
 
-        <section className='py-40 space-y-44 relative'>
+        <section className='relative space-y-44 py-40'>
           <article>
             <div className='relative'>
-              <span className='block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
               <Image
                 src='/qsmp-desktop.png'
                 alt='QSMP.co website'
                 width={1063}
                 height={408}
-                className='h-[25.5rem] w-full object-cover rounded'
+                className='h-[25.5rem] w-full rounded object-cover'
                 quality={100}
               />
-              <span className='block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
 
             <div className='mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2'>
               <div>
-                <strong className='font-semibold text-3.5xl text-[#DCD7CD] leading-none'>
+                <strong className='text-3.5xl font-semibold leading-none text-[#DCD7CD]'>
                   QSMP.co
                 </strong>
 
@@ -137,7 +137,7 @@ export default function Home() {
                   well as sections dedicated to project updates.
                 </p>
 
-                <div className='flex gap-4 mt-8'>
+                <div className='mt-8 flex gap-4'>
                   <ProjectLink type='live' href='https://qsmp.co/'>
                     See live
                   </ProjectLink>
@@ -152,7 +152,7 @@ export default function Home() {
               </div>
               <div />
               <div>
-                <div className='flex gap-4 justify-end max-w-96 flex-wrap ml-auto'>
+                <div className='ml-auto flex max-w-96 flex-wrap justify-end gap-4'>
                   <TechTag
                     color='#8AD3C8'
                     title='Tailwind'
@@ -195,21 +195,21 @@ export default function Home() {
 
           <article>
             <div className='relative'>
-              <span className='block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
               <Image
                 src='/mycontacts-desktop.png'
                 alt='MyContacts website'
                 width={1063}
                 height={408}
-                className='h-[25.5rem] w-full object-cover rounded'
+                className='h-[25.5rem] w-full rounded object-cover'
                 quality={100}
               />
-              <span className='block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
 
             <div className='mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2'>
               <div>
-                <strong className='font-semibold text-3.5xl text-[#DCD7CD] leading-none'>
+                <strong className='text-3.5xl font-semibold leading-none text-[#DCD7CD]'>
                   MyContacts
                 </strong>
 
@@ -220,7 +220,7 @@ export default function Home() {
                   as organize them by categories.
                 </p>
 
-                <div className='flex gap-4 mt-8'>
+                <div className='mt-8 flex gap-4'>
                   <ProjectLink
                     type='github'
                     href='https://github.com/erickgust/my-contacts-front'
@@ -231,7 +231,7 @@ export default function Home() {
               </div>
               <div />
               <div>
-                <div className='flex gap-4 justify-end max-w-96 flex-wrap ml-auto'>
+                <div className='ml-auto flex max-w-96 flex-wrap justify-end gap-4'>
                   <TechTag
                     color='#88E6FF'
                     title='React.js'
@@ -274,23 +274,23 @@ export default function Home() {
 
           <article>
             <div className='relative'>
-              <span className='block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
 
               <Image
                 src='/tmdb-desktop.png'
                 alt='TMDB Movies website'
                 width={1063}
                 height={408}
-                className='h-[25.5rem] w-full object-cover rounded'
+                className='h-[25.5rem] w-full rounded object-cover'
                 quality={100}
               />
 
-              <span className='block h-px absolute bottom-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+              <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
 
             <div className='mt-14 grid grid-cols-[1fr_230px_1fr]'>
               <div>
-                <strong className='font-semibold text-3.5xl text-[#DCD7CD] leading-none'>
+                <strong className='text-3.5xl font-semibold leading-none text-[#DCD7CD]'>
                   TMDB Movies
                 </strong>
 
@@ -301,7 +301,7 @@ export default function Home() {
                   genres, and certification.
                 </p>
 
-                <div className='flex gap-4 mt-8'>
+                <div className='mt-8 flex gap-4'>
                   <ProjectLink
                     type='live'
                     href='https://erickgust-tmdb.netlify.app/'
@@ -319,7 +319,7 @@ export default function Home() {
               </div>
               <div />
               <div>
-                <div className='flex gap-4 justify-end max-w-96 flex-wrap ml-auto'>
+                <div className='ml-auto flex max-w-96 flex-wrap justify-end gap-4'>
                   <TechTag
                     color='#88E6FF'
                     title='React.js'
@@ -356,10 +356,10 @@ export default function Home() {
           </article>
         </section>
 
-        <section className='space-y-16 py-12 relative before:block before:h-px before:absolute before:top-0 before:left-1/2 before:-translate-x-1/2 before:w-screen before:bg-[#1B1B1B] after:block after:h-px after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-screen after:bg-[#1B1B1B]'>
+        <section className='relative space-y-16 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B]'>
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='font-semibold text-2.5xl text-[#DCD7CD] leading-none'>
+              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
                 <span>Front-end Developer at</span>
                 <Image
                   aria-hidden
@@ -367,12 +367,12 @@ export default function Home() {
                   alt='Quackity Studios logo'
                   width={26}
                   height={26}
-                  className='inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5'
+                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>Quackity Studios</span>
               </strong>
 
-              <i className='text-[#DCD7CD] font-normal not-italic leading-none text-xl'>
+              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
                 October 2023 - April 2024
               </i>
             </div>
@@ -389,7 +389,7 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='font-semibold text-2.5xl text-[#DCD7CD] leading-none'>
+              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
                 <span>Front-end Intern at</span>
                 <Image
                   aria-hidden
@@ -397,12 +397,12 @@ export default function Home() {
                   alt='UpBase Consultoria logo'
                   width={26}
                   height={26}
-                  className='inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5'
+                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>UpBase Consultoria</span>
               </strong>
 
-              <i className='text-[#DCD7CD] font-normal not-italic leading-none text-xl'>
+              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
                 November 2022 - April 2023
               </i>
             </div>
@@ -419,7 +419,7 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='font-semibold text-2.5xl text-[#DCD7CD] leading-none'>
+              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
                 <span>Student in Analysis and Development of Systems at</span>
                 <Image
                   aria-hidden
@@ -427,12 +427,12 @@ export default function Home() {
                   alt='Universidade Cesumar logo'
                   width={26}
                   height={26}
-                  className='inline-block ml-3 mr-2 rotate-[4deg] rounded mb-0.5'
+                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>Universidade Cesumar</span>
               </strong>
 
-              <i className='text-[#DCD7CD] font-normal not-italic leading-none text-xl'>
+              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
                 July 2022 - January 2025
               </i>
             </div>
@@ -452,16 +452,16 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className='max-w-screen-lg mx-auto border-x border-[#1B1B1B]'>
-        <div className='text-[#DCD7CD] py-48 flex flex-col gap-8 items-center justify-center'>
+      <footer className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
+        <div className='flex flex-col items-center justify-center gap-8 py-48 text-[#DCD7CD]'>
           <p className='text-2xl'>Let’s work together!</p>
-          <p className='text-5.5xl text-transparent bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text'>
+          <p className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text text-5.5xl text-transparent'>
             erick.prussak@gmail.com
           </p>
         </div>
 
-        <div className='group text-xs flex gap-1.5 text-[#57544E] items-center lowercase p-8 justify-center leading-none relative'>
-          <span className='block h-px absolute top-0 left-1/2 -translate-x-1/2 w-screen bg-[#1B1B1B] -z-10' />
+        <div className='group relative flex items-center justify-center gap-1.5 p-8 text-xs lowercase leading-none text-[#57544E]'>
+          <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
 
           <span className='pt-0.5'>Developed by Erick</span>
           <Image
@@ -470,7 +470,7 @@ export default function Home() {
             alt='Star icon as a separator'
             width={14}
             height={14}
-            className='group-hover:rotate-90 transition-transform duration-300'
+            className='transition-transform duration-300 group-hover:rotate-90'
           />
           <span className='pt-0.5'>
             Designed by{' '}

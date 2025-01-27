@@ -3,7 +3,7 @@ import { EmailText } from './EmailText'
 
 export function EmailButton() {
   return (
-    <button className='flex rounded-full border py-2 px-4 gap-2.5 items-center justify-center leading-none'>
+    <button className='flex items-center justify-center gap-2.5 rounded-full border px-4 py-2 leading-none'>
       <Image
         aria-hidden
         src='/email.svg'
