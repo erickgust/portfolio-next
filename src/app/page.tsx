@@ -1,7 +1,67 @@
+/* eslint-disable jsx-a11y/alt-text */
 import { EmailButton } from '@/components/EmailButton'
 import { ProjectLink } from '@/components/ProjectLink'
 import { TechTag } from '@/components/TechTag'
-import Image from 'next/image'
+import Image, { getImageProps } from 'next/image'
+
+type Image = {
+  src: string
+  alt: string
+  width: number
+  height: number
+  quality?: number
+}
+
+type ResponsiveImageProps = {
+  desktop: Image
+  mobile: Omit<Image, 'alt'>
+}
+
+export function ResponsiveImage({
+  desktop: {
+    src: desktopSrc,
+    alt,
+    width: desktopWidth,
+    height: desktopHeight,
+    quality: desktopQuality = 100,
+  },
+  mobile: {
+    src: mobileSrc,
+    width: mobileWidth,
+    height: mobileHeight,
+    quality: mobileQuality = 100,
+  },
+}: ResponsiveImageProps) {
+  const common = { alt, sizes: '100vw' }
+
+  const {
+    props: { srcSet: desktop },
+  } = getImageProps({
+    ...common,
+    width: desktopWidth,
+    height: desktopHeight,
+    quality: desktopQuality,
+    src: desktopSrc,
+  })
+
+  const {
+    props: { srcSet: mobile, ...rest },
+  } = getImageProps({
+    ...common,
+    width: mobileWidth,
+    height: mobileHeight,
+    quality: mobileQuality,
+    src: mobileSrc,
+  })
+
+  return (
+    <picture>
+      <source media='(min-width: 600px)' srcSet={desktop} />
+      <source media='(min-width: 300px)' srcSet={mobile} />
+      <img {...rest} style={{ width: '100%', height: 'auto' }} />
+    </picture>
+  )
+}
 
 export default function Home() {
   return (
@@ -129,13 +189,20 @@ export default function Home() {
           <article>
             <div className='relative'>
               <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
-              <Image
-                src='/qsmp-desktop.png'
-                alt='QSMP.co website'
-                width={1063}
-                height={408}
-                className='h-[25.5rem] w-full rounded object-cover'
-                quality={100}
+              <ResponsiveImage
+                desktop={{
+                  src: '/qsmp-desktop.png',
+                  alt: 'QSMP.co website',
+                  width: 1063,
+                  height: 408,
+                  quality: 100,
+                }}
+                mobile={{
+                  src: '/qsmp-mobile.png',
+                  width: 339,
+                  height: 198,
+                  quality: 100,
+                }}
               />
               <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
@@ -218,13 +285,20 @@ export default function Home() {
           <article>
             <div className='relative'>
               <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
-              <Image
-                src='/mycontacts-desktop.png'
-                alt='MyContacts website'
-                width={1063}
-                height={408}
-                className='h-[25.5rem] w-full rounded object-cover'
-                quality={100}
+              <ResponsiveImage
+                desktop={{
+                  src: '/mycontacts-desktop.png',
+                  alt: 'MyContacts project',
+                  width: 1063,
+                  height: 408,
+                  quality: 100,
+                }}
+                mobile={{
+                  src: '/mycontacts-mobile.png',
+                  width: 339,
+                  height: 198,
+                  quality: 100,
+                }}
               />
               <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
@@ -298,13 +372,20 @@ export default function Home() {
             <div className='relative'>
               <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
 
-              <Image
-                src='/tmdb-desktop.png'
-                alt='TMDB Movies website'
-                width={1063}
-                height={408}
-                className='h-[25.5rem] w-full rounded object-cover'
-                quality={100}
+              <ResponsiveImage
+                desktop={{
+                  src: '/tmdb-desktop.png',
+                  alt: 'TMDB Movies website',
+                  width: 1063,
+                  height: 408,
+                  quality: 100,
+                }}
+                mobile={{
+                  src: '/tmdb-mobile.png',
+                  width: 339,
+                  height: 198,
+                  quality: 100,
+                }}
               />
 
               <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
