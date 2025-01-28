@@ -197,7 +197,7 @@ export default function Home() {
               <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
             </div>
 
-            <div className='mt-14 grid grid-cols-[1fr_230px_1fr] [&_p+p]:mt-2'>
+            <div className='mt-14 grid grid-cols-[2fr_1fr_2fr] [&_p+p]:mt-2'>
               <div>
                 <strong className='text-3.5xl font-semibold leading-none text-[#DCD7CD]'>
                   QSMP.co
