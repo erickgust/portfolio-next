@@ -381,26 +381,26 @@ export default function Home() {
         <section className='relative space-y-16 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B]'>
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
-                <span>Front-end Developer at</span>
+              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                <span className='mr-3'>Front-end Developer at</span>
                 <Image
                   aria-hidden
                   src='/quackity.svg'
                   alt='Quackity Studios logo'
                   width={26}
                   height={26}
-                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
+                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>Quackity Studios</span>
               </strong>
 
-              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
+              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
                 October 2023 - April 2024
               </i>
             </div>
 
             <div className='max-w-prose'>
-              <p className='mt-4'>
+              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
                 As part of an international team, I contributed to multilingual
                 projects built with Next.js and TypeScript, designed to handle
                 high volumes of simultaneous users, with a strong focus on
@@ -411,26 +411,26 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
-                <span>Front-end Intern at</span>
+              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                <span className='mr-3'>Front-end Intern at</span>
                 <Image
                   aria-hidden
                   src='/upbase.svg'
                   alt='UpBase Consultoria logo'
                   width={26}
                   height={26}
-                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
+                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>UpBase Consultoria</span>
               </strong>
 
-              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
+              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
                 November 2022 - April 2023
               </i>
             </div>
 
             <div className='max-w-prose'>
-              <p className='mt-4'>
+              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
                 At UpBase, I demonstrated my expertise in NextJS, React Native
                 and TypeScript by contributing to the development of mobile and
                 web projects. I worked closely with client feedback to align
@@ -441,26 +441,28 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-none text-[#DCD7CD]'>
-                <span>Student in Analysis and Development of Systems at</span>
+              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                <span className='mr-3'>
+                  Student in Analysis and Development of Systems at
+                </span>
                 <Image
                   aria-hidden
                   src='/unicesumar.svg'
                   alt='Universidade Cesumar logo'
                   width={26}
                   height={26}
-                  className='mb-0.5 ml-3 mr-2 inline-block rotate-[4deg] rounded'
+                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
                 />
                 <span>Universidade Cesumar</span>
               </strong>
 
-              <i className='text-xl font-normal not-italic leading-none text-[#DCD7CD]'>
+              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
                 July 2022 - January 2025
               </i>
             </div>
 
             <div className='max-w-prose'>
-              <p className='mt-4'>
+              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
                 I had the opportunity to learn various stages of software
                 development and management, from planning and collecting
                 requirements to deployment and maintenance. I also learnt how
