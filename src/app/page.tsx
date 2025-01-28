@@ -1,58 +1,9 @@
-/* eslint-disable jsx-a11y/alt-text */
 import { EmailButton } from '@/components/EmailButton'
 import { Project } from '@/components/Project'
 import { ProjectLink } from '@/components/ProjectLink'
+import { ResponsiveImage } from '@/components/ResponsiveImage'
 import { TechTag } from '@/components/TechTag'
-import Image, { getImageProps } from 'next/image'
-
-type Image = {
-  src: string
-  alt: string
-  width: number
-  height: number
-  quality?: number
-}
-
-type ResponsiveImageProps = {
-  desktop: Image
-  mobile: Omit<Image, 'alt'>
-}
-
-export function ResponsiveImage({ desktop, mobile }: ResponsiveImageProps) {
-  const common = { alt: desktop.alt, sizes: '100vw' }
-
-  const {
-    props: { srcSet: desktopSrc },
-  } = getImageProps({
-    ...common,
-    width: desktop.width,
-    height: desktop.height,
-    quality: desktop.quality,
-    src: desktop.src,
-  })
-
-  const {
-    props: { srcSet: mobileSrc, ...rest },
-  } = getImageProps({
-    ...common,
-    width: mobile.width,
-    height: mobile.height,
-    quality: mobile.quality,
-    src: mobile.src,
-  })
-
-  return (
-    <picture>
-      <source media='(min-width: 600px)' srcSet={desktopSrc} />
-      <source media='(min-width: 300px)' srcSet={mobileSrc} />
-      <img
-        className='rounded-sm sm:rounded'
-        {...rest}
-        style={{ width: '100%', height: 'auto' }}
-      />
-    </picture>
-  )
-}
+import Image from 'next/image'
 
 export default function Home() {
   return (
