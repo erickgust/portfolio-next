@@ -203,8 +203,8 @@ export default function Home() {
                 }}
                 mobile={{
                   src: '/qsmp-mobile.png',
-                  width: 339,
-                  height: 198,
+                  width: 678,
+                  height: 396,
                   quality: 100,
                 }}
               />
@@ -299,8 +299,8 @@ export default function Home() {
                 }}
                 mobile={{
                   src: '/mycontacts-mobile.png',
-                  width: 339,
-                  height: 198,
+                  width: 678,
+                  height: 396,
                   quality: 100,
                 }}
               />
@@ -386,8 +386,8 @@ export default function Home() {
                 }}
                 mobile={{
                   src: '/tmdb-mobile.png',
-                  width: 339,
-                  height: 198,
+                  width: 678,
+                  height: 396,
                   quality: 100,
                 }}
               />
