@@ -58,7 +58,11 @@ export function ResponsiveImage({
     <picture>
       <source media='(min-width: 600px)' srcSet={desktop} />
       <source media='(min-width: 300px)' srcSet={mobile} />
-      <img {...rest} style={{ width: '100%', height: 'auto' }} />
+      <img
+        className='rounded-sm sm:rounded'
+        {...rest}
+        style={{ width: '100%', height: 'auto' }}
+      />
     </picture>
   )
 }
