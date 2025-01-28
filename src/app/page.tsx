@@ -17,47 +17,33 @@ type ResponsiveImageProps = {
   mobile: Omit<Image, 'alt'>
 }
 
-export function ResponsiveImage({
-  desktop: {
-    src: desktopSrc,
-    alt,
-    width: desktopWidth,
-    height: desktopHeight,
-    quality: desktopQuality = 100,
-  },
-  mobile: {
-    src: mobileSrc,
-    width: mobileWidth,
-    height: mobileHeight,
-    quality: mobileQuality = 100,
-  },
-}: ResponsiveImageProps) {
-  const common = { alt, sizes: '100vw' }
+export function ResponsiveImage({ desktop, mobile }: ResponsiveImageProps) {
+  const common = { alt: desktop.alt, sizes: '100vw' }
 
   const {
-    props: { srcSet: desktop },
+    props: { srcSet: desktopSrc },
   } = getImageProps({
     ...common,
-    width: desktopWidth,
-    height: desktopHeight,
-    quality: desktopQuality,
-    src: desktopSrc,
+    width: desktop.width,
+    height: desktop.height,
+    quality: desktop.quality,
+    src: desktop.src,
   })
 
   const {
-    props: { srcSet: mobile, ...rest },
+    props: { srcSet: mobileSrc, ...rest },
   } = getImageProps({
     ...common,
-    width: mobileWidth,
-    height: mobileHeight,
-    quality: mobileQuality,
-    src: mobileSrc,
+    width: mobile.width,
+    height: mobile.height,
+    quality: mobile.quality,
+    src: mobile.src,
   })
 
   return (
     <picture>
-      <source media='(min-width: 600px)' srcSet={desktop} />
-      <source media='(min-width: 300px)' srcSet={mobile} />
+      <source media='(min-width: 600px)' srcSet={desktopSrc} />
+      <source media='(min-width: 300px)' srcSet={mobileSrc} />
       <img
         className='rounded-sm sm:rounded'
         {...rest}
