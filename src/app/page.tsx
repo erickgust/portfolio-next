@@ -562,7 +562,7 @@ export default function Home() {
       </main>
 
       <footer className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
-        <div className='flex flex-col items-center justify-center gap-2 py-64 text-[#DCD7CD] sm:gap-8 sm:py-48'>
+        <div className='flex flex-col items-center justify-center gap-2 py-64 text-[#DCD7CD] sm:gap-4 sm:py-48'>
           <p className='text-base sm:text-2xl'>Let’s work together!</p>
           <p className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text text-2.5xl text-transparent sm:text-5.5xl'>
             erick.prussak@gmail.com
