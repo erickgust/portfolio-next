@@ -206,7 +206,7 @@ export default function Home() {
             }
             actions={
               <>
-                <ProjectLink type='live' href='https://qsmp.co/'>
+                <ProjectLink type='live' href='http://qsmpco.netlify.app/'>
                   See live
                 </ProjectLink>
 
