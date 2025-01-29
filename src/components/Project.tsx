@@ -23,18 +23,25 @@ export function Project({
         <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
       </div>
 
-      <div className='mt-14 grid grid-cols-[2fr_1fr_2fr] [&_p+p]:mt-2'>
+      <div className='mt-10 grid grid-cols-1 sm:mt-14 md:grid-cols-[2fr_1fr_2fr] [&_p+p]:mt-2'>
         <div>
-          <strong className='text-3.5xl font-semibold leading-none text-[#DCD7CD]'>
+          <div className='mb-8 flex flex-wrap gap-3 md:hidden'>{tags}</div>
+
+          <strong className='text-3.5xl font-semibold text-[#DCD7CD]'>
             {title}
           </strong>
           <div className='mt-4'>{leftContent}</div>
-          <div className='mt-8 flex gap-4'>{actions}</div>
+          <div className='mt-8 hidden gap-4 md:flex'>{actions}</div>
         </div>
         <div />
         <div>
-          <div className='flex flex-wrap justify-end gap-4'>{tags}</div>
-          {rightContent && <div className='mt-20'>{rightContent}</div>}
+          <div className='hidden flex-wrap justify-end gap-4 md:flex'>
+            {tags}
+          </div>
+          {rightContent && <div className='mt-4 md:mt-20'>{rightContent}</div>}
+        </div>
+        <div className='mt-8 flex flex-col gap-4 sm:flex-row md:hidden'>
+          {actions}
         </div>
       </div>
     </article>
