@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 
 type ProjectLinkProps = {
@@ -15,15 +17,25 @@ export function ProjectLink({ href, type, children }: ProjectLinkProps) {
   return (
     <a
       href={href}
+      onPointerMove={(e) => {
+        const rect = e.currentTarget.getBoundingClientRect()
+        const x = e.clientX - rect.left
+        const y = e.clientY - rect.top
+
+        e.currentTarget.style.setProperty('--x', x.toString())
+        e.currentTarget.style.setProperty('--y', y.toString())
+      }}
       rel='noopener noreferrer'
       target='_blank'
       style={{
         ['--color' as string]: color,
       }}
-      className='group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-full border border-[--color] px-4 py-3 text-base leading-none text-[--color] md:py-2 md:text-sm'
+      className='group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-3xl border border-[--color] px-4 py-3 text-base leading-none text-[--color] md:py-2 md:text-sm'
     >
-      <span className='absolute inset-0 origin-left scale-x-0 rounded-full bg-[--color] transition-transform duration-1000 ease-in-out group-hover:scale-x-100 supports-[transition-timing-function:linear(0,1)]:group-hover:duration-1000 supports-[transition-timing-function:linear(0,1)]:group-hover:[transition-timing-function:linear(0,0.5007_7.21%,0.7803_12.29%,0.8883_14.93%,0.9724_17.63%,1.0343_20.44%,1.0754_23.44%,1.0898_25.22%,1.0984_27.11%,1.1014_29.15%,1.0989_31.4%,1.0854_35.23%,1.0196_48.86%,1.0043_54.06%,0.9956_59.6%,0.9925_68.11%,1)]' />
-
+      {/* <span className='absolute inset-0 origin-left scale-x-0 rounded-full bg-[--color] transition-transform duration-1000 ease-in-out group-hover:scale-x-100' /> */}
+      <span className='pointer-events-none absolute inset-0 overflow-hidden rounded-3xl'>
+        <span className='absolute left-[calc(var(--x,0)*1px)] top-[calc(var(--y,0)*1px)] inline-block aspect-square w-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-[50%] bg-[--color] mix-blend-difference transition-transform duration-200 group-hover:scale-150 group-focus-visible:scale-150 group-active:scale-[3]' />
+      </span>
       <Image
         aria-hidden
         src={icon}
