@@ -32,10 +32,7 @@ export function ProjectLink({ href, type, children }: ProjectLinkProps) {
       }}
       className='group relative inline-flex items-center justify-center gap-2.5 overflow-hidden rounded-3xl border border-[--color] px-4 py-3 text-base leading-none text-[--color] md:py-2 md:text-sm'
     >
-      {/* <span className='absolute inset-0 origin-left scale-x-0 rounded-full bg-[--color] transition-transform duration-1000 ease-in-out group-hover:scale-x-100' /> */}
-      <span className='pointer-events-none absolute inset-0 overflow-hidden rounded-3xl'>
-        <span className='absolute left-[calc(var(--x,0)*1px)] top-[calc(var(--y,0)*1px)] inline-block aspect-square w-1/2 -translate-x-1/2 -translate-y-1/2 scale-0 rounded-[50%] bg-[--color] mix-blend-difference transition-transform duration-200 group-hover:scale-150 group-focus-visible:scale-150 group-active:scale-[4]' />
-      </span>
+      <span className='absolute left-[calc(var(--x,0)*1px)] top-[calc(var(--y,0)*1px)] inline-block aspect-square w-1/2 origin-center -translate-x-1/2 -translate-y-1/2 scale-0 rounded-full bg-[--color] transition-transform duration-200 ease-in-out group-hover:scale-150 group-focus-visible:scale-100 group-active:scale-[4]' />
       <Image
         aria-hidden
         src={icon}
