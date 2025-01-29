@@ -127,7 +127,7 @@ export default function Home() {
           <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
         </section>
 
-        <section className='relative space-y-44 py-40'>
+        <section className='relative space-y-36 py-40 sm:space-y-44'>
           <Project
             title='QSMP.co'
             image={
@@ -362,7 +362,7 @@ export default function Home() {
           />
         </section>
 
-        <section className='relative space-y-16 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B]'>
+        <section className='relative space-y-12 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B] sm:space-y-16'>
           <article>
             <div className='flex flex-col gap-2'>
               <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
