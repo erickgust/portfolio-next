@@ -36,7 +36,7 @@ export default function Home() {
 
       <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
         <section className='grid min-h-[calc(100vh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
-          <h1 className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
+          <h1 className='text-balance bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
             Passionate front-end developer, eager to use his skills on
             challenging projects that can have a positive impact on
             people&apos;s lives.
@@ -365,7 +365,7 @@ export default function Home() {
         <section className='relative space-y-16 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B]'>
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
                 <span className='mr-3'>Front-end Developer at</span>
                 <Image
                   aria-hidden
@@ -395,7 +395,7 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
                 <span className='mr-3'>Front-end Intern at</span>
                 <Image
                   aria-hidden
@@ -425,7 +425,7 @@ export default function Home() {
 
           <article>
             <div className='flex flex-col gap-2'>
-              <strong className='text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
                 <span className='mr-3'>
                   Student in Analysis and Development of Systems at
                 </span>

@@ -16,3 +16,7 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+p {
+  text-wrap: pretty;
+}
