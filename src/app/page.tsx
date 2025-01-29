@@ -35,7 +35,7 @@ export default function Home() {
       </header>
 
       <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
-        <section className='grid min-h-[calc(100vh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
+        <section className='grid min-h-[calc(100dvh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
           <h1 className='text-balance bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
             Passionate front-end developer, eager to use his skills on
             challenging projects that can have a positive impact on
@@ -43,7 +43,7 @@ export default function Home() {
           </h1>
         </section>
 
-        <section className='mb-24 flex items-center justify-between gap-4 sm:hidden'>
+        <section className='mb-24 mt-4 flex items-center justify-between gap-4 sm:hidden'>
           <EmailButton />
 
           <a
