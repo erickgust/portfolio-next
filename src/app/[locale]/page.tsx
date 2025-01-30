@@ -102,16 +102,16 @@ export default function Home() {
             image={
               <ResponsiveImage
                 desktop={{
-                  src: '/qsmp-desktop.png',
+                  src: '/qsmp.co-desktop.png',
                   alt: 'QSMP.co website',
-                  width: 1063,
-                  height: 408,
+                  width: 3189,
+                  height: 1224,
                   quality: 100,
                 }}
                 mobile={{
-                  src: '/qsmp-mobile.png',
-                  width: 678,
-                  height: 396,
+                  src: '/qsmp.co-mobile.png',
+                  width: 1356,
+                  height: 792,
                   quality: 100,
                 }}
               />
@@ -175,14 +175,14 @@ export default function Home() {
                 desktop={{
                   src: '/mycontacts-desktop.png',
                   alt: 'MyContacts project',
-                  width: 1063,
-                  height: 408,
+                  width: 3189,
+                  height: 1224,
                   quality: 100,
                 }}
                 mobile={{
                   src: '/mycontacts-mobile.png',
-                  width: 678,
-                  height: 396,
+                  width: 1356,
+                  height: 792,
                   quality: 100,
                 }}
               />
@@ -229,14 +229,14 @@ export default function Home() {
                 desktop={{
                   src: '/tmdb-desktop.png',
                   alt: 'TMDB Movies website',
-                  width: 1063,
-                  height: 408,
+                  width: 3189,
+                  height: 1224,
                   quality: 100,
                 }}
                 mobile={{
                   src: '/tmdb-mobile.png',
-                  width: 678,
-                  height: 396,
+                  width: 1356,
+                  height: 792,
                   quality: 100,
                 }}
               />
