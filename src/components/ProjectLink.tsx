@@ -1,5 +1,6 @@
 'use client'
 
+import { getPointerPosition } from '@/app/utils/getPointerPosition'
 import Image from 'next/image'
 
 type ProjectLinkProps = {
@@ -17,14 +18,7 @@ export function ProjectLink({ href, type, children }: ProjectLinkProps) {
   return (
     <a
       href={href}
-      onPointerMove={(e) => {
-        const rect = e.currentTarget.getBoundingClientRect()
-        const x = e.clientX - rect.left
-        const y = e.clientY - rect.top
-
-        e.currentTarget.style.setProperty('--x', x.toString())
-        e.currentTarget.style.setProperty('--y', y.toString())
-      }}
+      onPointerMove={getPointerPosition({ x: '--x', y: '--y' })}
       rel='noopener noreferrer'
       target='_blank'
       style={{

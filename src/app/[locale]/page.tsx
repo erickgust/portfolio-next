@@ -1,4 +1,5 @@
 import { EmailButton } from '@/components/EmailButton'
+import { GitHubButton } from '@/components/GithubButton'
 import { Project } from '@/components/Project'
 import { ProjectLink } from '@/components/ProjectLink'
 import { ResponsiveImage } from '@/components/ResponsiveImage'
@@ -17,22 +18,7 @@ export default function Home() {
         </strong>
 
         <div className='hidden items-center gap-4 text-sm sm:flex'>
-          <a
-            href='https://github.com/erickgust'
-            rel='noopener noreferrer'
-            target='_blank'
-            className='inline-block rounded-full border p-2'
-          >
-            <Image
-              src='/github.svg'
-              alt={t('header.githubAlt')}
-              width={16}
-              height={16}
-              className='max-w-max'
-              priority
-            />
-          </a>
-
+          <GitHubButton />
           <EmailButton />
         </div>
       </header>
@@ -46,22 +32,7 @@ export default function Home() {
 
         <section className='mb-24 mt-4 flex items-center justify-between gap-4 sm:hidden'>
           <EmailButton />
-
-          <a
-            href='https://github.com/erickgust'
-            rel='noopener noreferrer'
-            target='_blank'
-            className='inline-block rounded-full border p-3.5 sm:p-2'
-          >
-            <Image
-              src='/github.svg'
-              alt={t('header.githubAlt')}
-              width={16}
-              height={16}
-              className='max-w-max'
-              priority
-            />
-          </a>
+          <GitHubButton />
         </section>
 
         <section className='relative flex flex-col justify-between gap-12 md:flex-row md:flex-wrap'>
