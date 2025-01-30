@@ -1,7 +1,7 @@
 {
   "home": {
     "header": {
-      "githubAlt": "Logo do GitHub"
+      "githubLinkLabel": "Visite meu perfil no GitHub"
     },
     "hero": {
       "headline": "Desenvolvedor front-end apaixonado, ansioso para usar suas habilidades em projetos desafiadores que possam ter um impacto positivo na vida das pessoas."
