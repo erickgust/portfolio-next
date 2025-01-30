@@ -36,7 +36,7 @@ export default async function RootLayout({
   const messages = await getMessages({ locale })
 
   return (
-    <html lang='en'>
+    <html lang={locale}>
       <body className={`${font.className} font-normal antialiased`}>
         <NextIntlClientProvider messages={messages}>
           {children}
