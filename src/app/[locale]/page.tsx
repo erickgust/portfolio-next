@@ -24,7 +24,7 @@ export default function Home() {
       </header>
 
       <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
-        <section className='grid min-h-[calc(100dvh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
+        <section className='grid min-h-[calc(100svh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
           <h1 className='text-balance bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
             {t('hero.headline')}
           </h1>
