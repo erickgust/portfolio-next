@@ -1,0 +1,72 @@
+{
+  "home": {
+    "header": {
+      "githubAlt": "Logo do GitHub"
+    },
+    "hero": {
+      "headline": "Desenvolvedor front-end apaixonado, ansioso para usar suas habilidades em projetos desafiadores que possam ter um impacto positivo na vida das pessoas."
+    },
+    "services": {
+      "development": {
+        "title": "Desenvolvimento",
+        "description": "Construindo aplicações impactantes e de alta performance com tecnologias de ponta.",
+        "iconAlt": "Ícone de desenvolvimento"
+      },
+      "webAndMobile": {
+        "title": "Aplicações Web e Mobile",
+        "description": "Transformando suas ideias em aplicativos mobile e web incríveis com responsividade e acessibilidade.",
+        "iconAlt": "Ícone de aplicações Web e Mobile"
+      },
+      "design": {
+        "title": "Design Orientado a Detalhes",
+        "description": "Criando interfaces com fidelidade ao design, seguindo o conceito pixel-perfect.",
+        "iconAlt": "Ícone de ferramentas"
+      }
+    },
+    "projects": {
+      "qsmp": {
+        "title": "QSMP.co",
+        "descriptionPart1": "Fui o desenvolvedor responsável pelo QSMP.co, o portal oficial do projeto QSMP, o primeiro servidor de Minecraft multilíngue com tradução em tempo real, conectando criadores de conteúdo de diferentes regiões e idiomas.",
+        "descriptionPart2": "O objetivo do site era centralizar as principais informações sobre o servidor e seus participantes, oferecendo uma lista dos membros atuais com links para seus perfis nas redes sociais, além de seções dedicadas às atualizações do projeto.",
+        "descriptionPart3": "Para o desenvolvimento, escolhi Next.js devido à minha familiaridade com a ferramenta e sua capacidade de oferecer alto desempenho e otimização de SEO, ambos essenciais para o projeto. Para estilização, utilizei Tailwind CSS, garantindo flexibilidade e eficiência no design.",
+        "descriptionPart4": "Essas tecnologias foram essenciais para garantir produtividade e eficiência enquanto entregava um site responsivo, com suporte a múltiplos idiomas e excelente desempenho."
+      },
+      "myContacts": {
+        "title": "MyContacts",
+        "descriptionPart1": "MyContacts foi um projeto onde explorei React e React Router mais a fundo, construindo um gerenciador de contatos que permite criar, editar, excluir e visualizar contatos, além de organizá-los por categorias.",
+        "descriptionPart2": "Também tive a oportunidade de desenvolver uma API REST em Node.js com Express, que se conecta a um ambiente Docker executando PostgreSQL."
+      },
+      "tmdb": {
+        "title": "TMDB Movies",
+        "descriptionPart1": "TMDB Movies é um projeto que permite navegar por uma lista de filmes em alta, filtrados por vários gêneros. Ao selecionar um filme, você pode ver detalhes como avaliação, sinopse, elenco, gêneros e classificação.",
+        "descriptionPart2": "Este projeto foi construído em TypeScript e React para explorar os recursos do React Query combinados com React Router. Também usa a biblioteca Zod para garantir a segurança de tipos para os dados obtidos da API TMDB."
+      }
+    },
+    "experience": {
+      "quackity": {
+        "title": "Desenvolvedor Front-end na",
+        "period": "Outubro 2023 - Abril 2024",
+        "description": "Como parte de uma equipe internacional, contribuí para projetos multilíngues construídos com Next.js e TypeScript, projetados para lidar com grandes volumes de usuários simultâneos, com forte foco na otimização da experiência do usuário e performance."
+      },
+      "upbase": {
+        "title": "Estagiário Front-end na",
+        "period": "Novembro 2022 - Abril 2023",
+        "description": "Na UpBase, demonstrei minha experiência em NextJS, React Native e TypeScript contribuindo para o desenvolvimento de projetos mobile e web. Trabalhei próximo ao feedback dos clientes para alinhar com suas necessidades e entregar resultados consistentemente."
+      },
+      "education": {
+        "title": "Estudante de Análise e Desenvolvimento de Sistemas na",
+        "period": "Julho 2022 - Janeiro 2025",
+        "description": "Tive a oportunidade de aprender várias etapas do desenvolvimento e gerenciamento de software, desde o planejamento e coleta de requisitos até a implantação e manutenção. Também aprendi como o design de interface é planejado, desde wireframes até protótipos de baixa e alta fidelidade. Além disso, aprofundei meu conhecimento em algoritmos e estruturas de dados usando Java e C, bem como gerenciamento de banco de dados com MySQL."
+      }
+    },
+    "footer": {
+      "letWork": "Vamos trabalhar juntos!",
+      "developedBy": "Desenvolvido por Erick",
+      "designedBy": "Design por"
+    },
+    "actions": {
+      "seeLive": "Ver projeto",
+      "github": "Repositório GitHub"
+    }
+  }
+}
