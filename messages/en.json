@@ -1,1 +1,72 @@
-{}
+{
+  "home": {
+    "header": {
+      "githubAlt": "GitHub logo"
+    },
+    "hero": {
+      "headline": "Passionate front-end developer, eager to use his skills on challenging projects that can have a positive impact on people's lives."
+    },
+    "services": {
+      "development": {
+        "title": "Development",
+        "description": "Building impactful, high-performance applications with cutting-edge technologies.",
+        "iconAlt": "Development icon"
+      },
+      "webAndMobile": {
+        "title": "Web and Mobile apps",
+        "description": "Turning your ideas into amazing mobile and web apps with responsiveness and accessibility.",
+        "iconAlt": "Web and Mobile apps icon"
+      },
+      "design": {
+        "title": "Detail-Driven Design",
+        "description": "Crafting interfaces with design fidelity, following the pixel-perfect concept.",
+        "iconAlt": "Tools icon"
+      }
+    },
+    "projects": {
+      "qsmp": {
+        "title": "QSMP.co",
+        "descriptionPart1": "I was the developer responsible for QSMP.co, the official portal of the QSMP project, the first multilingual Minecraft server with real-time translation, connecting content creators from different regions and languages.",
+        "descriptionPart2": "The website's goal was to centralize the main information about the server and its participants, offering a list of current members with links to their social media profiles, as well as sections dedicated to project updates.",
+        "descriptionPart3": "For development, I chose Next.js due to my familiarity with the tool and its ability to offer high performance and SEO optimization, both essential for the project. For styling, I used Tailwind CSS, ensuring flexibility and efficiency in design.",
+        "descriptionPart4": "These technologies were essential to ensuring productivity and efficiency while delivering a responsive, multi-language supported website with excellent performance."
+      },
+      "myContacts": {
+        "title": "MyContacts",
+        "descriptionPart1": "MyContacts was a project where I explored React and React Router more in-depth by building a contact management feature that lets you create, edit, delete, and view contacts, as well as organize them by categories.",
+        "descriptionPart2": "I also had the opportunity to develop a REST API in Node.js with Express, which connects to a Docker environment running PostgreSQL."
+      },
+      "tmdb": {
+        "title": "TMDB Movies",
+        "descriptionPart1": "TMDB Movies is a project that lets you browse a list of trending movies, filtered by various genres. By selecting a movie, you can view details such as rating, synopsis, cast, genres, and certification.",
+        "descriptionPart2": "This project was built in TypeScript and React to explore React Query features combined with React Router. It also uses the Zod library to ensure type safety for data fetched from the TMDB API."
+      }
+    },
+    "experience": {
+      "quackity": {
+        "title": "Front-end Developer at",
+        "period": "October 2023 - April 2024",
+        "description": "As part of an international team, I contributed to multilingual projects built with Next.js and TypeScript, designed to handle high volumes of simultaneous users, with a strong focus on optimizing user experience and performance."
+      },
+      "upbase": {
+        "title": "Front-end Intern at",
+        "period": "November 2022 - April 2023",
+        "description": "At UpBase, I demonstrated my expertise in NextJS, React Native and TypeScript by contributing to the development of mobile and web projects. I worked closely with client feedback to align with their needs and consistently deliver results."
+      },
+      "education": {
+        "title": "Student in Analysis and Development of Systems at",
+        "period": "July 2022 - January 2025",
+        "description": "I had the opportunity to learn various stages of software development and management, from planning and collecting requirements to deployment and maintenance. I also learnt how interface design is planned, from wireframes to low- and high-fidelity prototypes. Furthermore, I deepened my knowledge of algorithms and data structures using Java and C, as well as database management with MySQL."
+      }
+    },
+    "footer": {
+      "letWork": "Let's work together!",
+      "developedBy": "Developed by Erick",
+      "designedBy": "Designed by"
+    },
+    "actions": {
+      "seeLive": "See live",
+      "github": "GitHub repository"
+    }
+  }
+}
