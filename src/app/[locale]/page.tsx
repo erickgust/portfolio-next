@@ -5,9 +5,15 @@ import { ProjectLink } from '@/components/ProjectLink'
 import { ResponsiveImage } from '@/components/ResponsiveImage'
 import { TechTag } from '@/components/TechTag'
 import { useTranslations } from 'next-intl'
+import { setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  setRequestLocale(locale)
   const t = useTranslations('home')
 
   return (
