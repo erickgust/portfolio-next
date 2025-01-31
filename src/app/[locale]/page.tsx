@@ -4,17 +4,18 @@ import { Project } from '@/components/Project'
 import { ProjectLink } from '@/components/ProjectLink'
 import { ResponsiveImage } from '@/components/ResponsiveImage'
 import { TechTag } from '@/components/TechTag'
-import { useTranslations } from 'next-intl'
-import { setRequestLocale } from 'next-intl/server'
+import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
-export default function Home({
-  params: { locale },
-}: {
-  params: { locale: string }
-}) {
-  setRequestLocale(locale)
-  const t = useTranslations('home')
+type HomeProps = {
+  params: Promise<{
+    locale: string
+  }>
+}
+
+export default async function Home({ params }: HomeProps) {
+  setRequestLocale((await params).locale)
+  const t = await getTranslations('home')
 
   return (
     <div className='min-h-screen overflow-x-hidden px-11'>
