@@ -45,6 +45,7 @@ export default function Home() {
               alt={t('services.development.iconAlt')}
               width={32}
               height={32}
+              className='size-8'
             />
 
             <div>
@@ -63,6 +64,7 @@ export default function Home() {
               alt={t('services.webAndMobile.iconAlt')}
               width={32}
               height={32}
+              className='size-8'
             />
 
             <div>
@@ -81,6 +83,7 @@ export default function Home() {
               alt={t('services.design.iconAlt')}
               width={32}
               height={32}
+              className='size-8'
             />
 
             <div>
@@ -384,7 +387,7 @@ export default function Home() {
             alt='Star icon as a separator'
             width={14}
             height={14}
-            className='transition-transform duration-300 group-hover:rotate-90'
+            className='size-3.5 transition-transform duration-300 group-hover:rotate-90'
           />
           <span className='pt-0.5'>
             {t('footer.designedBy')}{' '}
