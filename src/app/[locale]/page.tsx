@@ -1,5 +1,6 @@
 import { EmailButton } from '@/components/EmailButton'
 import { GitHubButton } from '@/components/GithubButton'
+import { HorizontalLine } from '@/components/HorizontalLine'
 import { Project } from '@/components/Project'
 import { ProjectLink } from '@/components/ProjectLink'
 import { ResponsiveImage } from '@/components/ResponsiveImage'
@@ -50,7 +51,8 @@ export default async function Home({ params }: HomeProps) {
         </section>
 
         <section className='relative flex flex-col justify-between gap-12 md:flex-row md:flex-wrap'>
-          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <HorizontalLine side='top' start='right' />
+          <HorizontalLine side='bottom' start='left' />
 
           <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
@@ -109,8 +111,6 @@ export default async function Home({ params }: HomeProps) {
               </p>
             </div>
           </article>
-
-          <span className='animate-line-width absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
 
         <section className='relative space-y-36 py-40 sm:space-y-44'>
@@ -300,7 +300,8 @@ export default async function Home({ params }: HomeProps) {
         </section>
 
         <section className='relative py-12'>
-          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <HorizontalLine side='top' start='right' />
+          <HorizontalLine side='bottom' start='left' />
           <div className='space-y-12 sm:space-y-16'>
             <article>
               <div className='flex flex-col gap-2'>
@@ -385,7 +386,6 @@ export default async function Home({ params }: HomeProps) {
               </div>
             </article>
           </div>
-          <span className='animate-line-width absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
       </main>
 
@@ -401,7 +401,7 @@ export default async function Home({ params }: HomeProps) {
         </div>
 
         <div className='group relative flex items-center justify-center gap-1.5 p-8 text-xs lowercase leading-none text-[#57544E]'>
-          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <HorizontalLine side='top' start='right' />
 
           <span className='pt-0.5'>{t('footer.developedBy')}</span>
           <Image

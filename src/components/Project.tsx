@@ -1,3 +1,5 @@
+import { HorizontalLine } from './HorizontalLine'
+
 type ProjectProps = {
   title: string
   image: React.ReactNode
@@ -18,9 +20,9 @@ export function Project({
   return (
     <article>
       <div className='relative'>
-        <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+        <HorizontalLine side='top' start='right' />
         {image}
-        <span className='animate-line-width absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
+        <HorizontalLine side='bottom' start='left' />
       </div>
 
       <div className='mt-10 grid grid-cols-1 sm:mt-14 md:grid-cols-[2fr_1fr_2fr] [&_p+p]:mt-2'>
