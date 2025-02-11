@@ -5,6 +5,8 @@ import { routing } from '@/i18n/routing'
 import { notFound } from 'next/navigation'
 import { getMessages, setRequestLocale } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
+import { Analytics } from '@vercel/analytics/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 const font = localFont({
   src: '../fonts/FKTGnarly_Wght-VF.ttf',
@@ -41,6 +43,9 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
+
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
