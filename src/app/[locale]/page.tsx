@@ -4,6 +4,7 @@ import { Project } from '@/components/Project'
 import { ProjectLink } from '@/components/ProjectLink'
 import { ResponsiveImage } from '@/components/ResponsiveImage'
 import { TechTag } from '@/components/TechTag'
+import { VerticalLine } from '@/components/VerticalLine'
 import { getTranslations, setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
@@ -18,8 +19,11 @@ export default async function Home({ params }: HomeProps) {
   const t = await getTranslations('home')
 
   return (
-    <div className='min-h-screen overflow-x-hidden px-11'>
-      <header className='mx-auto flex max-w-screen-lg items-center justify-between border-x border-[#1B1B1B] py-16 text-[#DCD7CD] sm:py-8'>
+    <div className='overflow-x-hidden px-11'>
+      <header className='relative mx-auto flex max-w-screen-lg items-center justify-between py-16 text-[#DCD7CD] sm:py-8'>
+        <VerticalLine side='left' />
+        <VerticalLine side='right' />
+
         <strong className='text-base font-normal sm:text-sm'>
           Erick Gustavo
         </strong>
@@ -30,7 +34,10 @@ export default async function Home({ params }: HomeProps) {
         </div>
       </header>
 
-      <main className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
+      <main className='relative mx-auto max-w-screen-lg'>
+        <VerticalLine side='left' />
+        <VerticalLine side='right' />
+
         <section className='grid min-h-[calc(100svh-152px)] place-items-end sm:min-h-[calc(100vh-90px)] sm:place-items-center'>
           <h1 className='text-balance bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text py-16 text-3.5xl text-transparent sm:text-5.5xl'>
             {t('hero.headline')}
@@ -43,7 +50,7 @@ export default async function Home({ params }: HomeProps) {
         </section>
 
         <section className='relative flex flex-col justify-between gap-12 md:flex-row md:flex-wrap'>
-          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
 
           <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
@@ -103,7 +110,7 @@ export default async function Home({ params }: HomeProps) {
             </div>
           </article>
 
-          <span className='line-animation absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
+          <span className='animate-line-width absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
 
         <section className='relative space-y-36 py-40 sm:space-y-44'>
@@ -293,7 +300,7 @@ export default async function Home({ params }: HomeProps) {
         </section>
 
         <section className='relative py-12'>
-          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
           <div className='space-y-12 sm:space-y-16'>
             <article>
               <div className='flex flex-col gap-2'>
@@ -378,11 +385,14 @@ export default async function Home({ params }: HomeProps) {
               </div>
             </article>
           </div>
-          <span className='line-animation absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
+          <span className='animate-line-width absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
       </main>
 
-      <footer className='mx-auto max-w-screen-lg border-x border-[#1B1B1B]'>
+      <footer className='relative mx-auto max-w-screen-lg'>
+        <VerticalLine side='left' />
+        <VerticalLine side='right' />
+
         <div className='flex flex-col items-center justify-center gap-2 py-64 text-[#DCD7CD] sm:gap-4 sm:py-48'>
           <p className='text-base sm:text-2xl'>{t('footer.letWork')}</p>
           <p className='bg-gradient-to-r from-[#DCD7CD] to-[#E7BE6C] bg-clip-text text-2.5xl text-transparent sm:text-5.5xl'>
@@ -391,7 +401,7 @@ export default async function Home({ params }: HomeProps) {
         </div>
 
         <div className='group relative flex items-center justify-center gap-1.5 p-8 text-xs lowercase leading-none text-[#57544E]'>
-          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <span className='animate-line-width absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
 
           <span className='pt-0.5'>{t('footer.developedBy')}</span>
           <Image
