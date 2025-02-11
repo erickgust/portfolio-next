@@ -7,14 +7,17 @@ import { useRef } from 'react'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export function useHorizontalLineScrollAnimation(start: 'left' | 'right') {
+export function useHorizontalLineScrollAnimation(
+  start: 'left' | 'right',
+  isLastElement?: boolean,
+) {
   const lineRef = useRef<HTMLSpanElement>(null)
 
   useGSAP(
     () => {
       ScrollTrigger.create({
         trigger: lineRef.current,
-        start: 'top 90%',
+        start: `top ${isLastElement ? 'bottom' : '80%'}`,
         end: 'bottom top',
         invalidateOnRefresh: true,
         once: true,
@@ -44,10 +47,15 @@ export function useHorizontalLineScrollAnimation(start: 'left' | 'right') {
 type HorizontalLineProps = {
   side: 'top' | 'bottom'
   start: 'left' | 'right'
+  isLastElement?: boolean
 }
 
-export function HorizontalLine({ side, start }: HorizontalLineProps) {
-  const lineRef = useHorizontalLineScrollAnimation(start)
+export function HorizontalLine({
+  side,
+  start,
+  isLastElement,
+}: HorizontalLineProps) {
+  const lineRef = useHorizontalLineScrollAnimation(start, isLastElement)
 
   return (
     <span

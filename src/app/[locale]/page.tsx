@@ -401,7 +401,7 @@ export default async function Home({ params }: HomeProps) {
         </div>
 
         <div className='group relative flex items-center justify-center gap-1.5 p-8 text-xs lowercase leading-none text-[#57544E]'>
-          <HorizontalLine side='top' start='right' />
+          <HorizontalLine side='top' start='right' isLastElement />
 
           <span className='pt-0.5'>{t('footer.developedBy')}</span>
           <Image
