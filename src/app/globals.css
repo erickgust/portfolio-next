@@ -20,3 +20,22 @@ body {
 p {
   text-wrap: pretty;
 }
+
+@keyframes lineWidth {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scaleX(2);
+    opacity: 0.05;
+  }
+}
+
+.line-animation {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: lineWidth;
+  animation-timing-function: ease-in-out;
+  animation-delay: 150ms;
+}

@@ -43,7 +43,7 @@ export default async function Home({ params }: HomeProps) {
         </section>
 
         <section className='relative flex flex-col justify-between gap-12 md:flex-row md:flex-wrap'>
-          <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
+          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
 
           <article className='flex grow basis-80 flex-col justify-between rounded border border-[#DCD7CD] border-opacity-30 bg-[#161616] bg-opacity-90 p-8 max-md:max-h-60 md:h-72 xl:grow-0'>
             <Image
@@ -103,7 +103,7 @@ export default async function Home({ params }: HomeProps) {
             </div>
           </article>
 
-          <span className='absolute bottom-0 left-1/2 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
+          <span className='line-animation absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
 
         <section className='relative space-y-36 py-40 sm:space-y-44'>
@@ -292,87 +292,93 @@ export default async function Home({ params }: HomeProps) {
           />
         </section>
 
-        <section className='relative space-y-12 py-12 before:absolute before:left-1/2 before:top-0 before:block before:h-px before:w-screen before:-translate-x-1/2 before:bg-[#1B1B1B] after:absolute after:bottom-0 after:left-1/2 after:block after:h-px after:w-screen after:-translate-x-1/2 after:bg-[#1B1B1B] sm:space-y-16'>
-          <article>
-            <div className='flex flex-col gap-2'>
-              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
-                <span className='mr-3'>{t('experience.quackity.title')}</span>
-                <Image
-                  aria-hidden
-                  src='/quackity.svg'
-                  alt='Quackity Studios logo'
-                  width={26}
-                  height={26}
-                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
-                />
-                <span>Quackity Studios</span>
-              </strong>
+        <section className='relative py-12'>
+          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
+          <div className='space-y-12 sm:space-y-16'>
+            <article>
+              <div className='flex flex-col gap-2'>
+                <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                  <span className='mr-3'>{t('experience.quackity.title')}</span>
+                  <Image
+                    aria-hidden
+                    src='/quackity.svg'
+                    alt='Quackity Studios logo'
+                    width={26}
+                    height={26}
+                    className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
+                  />
+                  <span>Quackity Studios</span>
+                </strong>
 
-              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
-                {t('experience.quackity.period')}
-              </i>
-            </div>
+                <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
+                  {t('experience.quackity.period')}
+                </i>
+              </div>
 
-            <div className='max-w-prose'>
-              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
-                {t('experience.quackity.description')}
-              </p>
-            </div>
-          </article>
+              <div className='max-w-prose'>
+                <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
+                  {t('experience.quackity.description')}
+                </p>
+              </div>
+            </article>
 
-          <article>
-            <div className='flex flex-col gap-2'>
-              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
-                <span className='mr-3'>{t('experience.upbase.title')}</span>
-                <Image
-                  aria-hidden
-                  src='/upbase.svg'
-                  alt='UpBase Consultoria logo'
-                  width={26}
-                  height={26}
-                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
-                />
-                <span>UpBase Consultoria</span>
-              </strong>
+            <article>
+              <div className='flex flex-col gap-2'>
+                <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                  <span className='mr-3'>{t('experience.upbase.title')}</span>
+                  <Image
+                    aria-hidden
+                    src='/upbase.svg'
+                    alt='UpBase Consultoria logo'
+                    width={26}
+                    height={26}
+                    className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
+                  />
+                  <span>UpBase Consultoria</span>
+                </strong>
 
-              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
-                {t('experience.upbase.period')}
-              </i>
-            </div>
+                <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
+                  {t('experience.upbase.period')}
+                </i>
+              </div>
 
-            <div className='max-w-prose'>
-              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
-                {t('experience.upbase.description')}
-              </p>
-            </div>
-          </article>
+              <div className='max-w-prose'>
+                <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
+                  {t('experience.upbase.description')}
+                </p>
+              </div>
+            </article>
 
-          <article>
-            <div className='flex flex-col gap-2'>
-              <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
-                <span className='mr-3'>{t('experience.education.title')}</span>
-                <Image
-                  aria-hidden
-                  src='/unicesumar.svg'
-                  alt='Universidade Cesumar logo'
-                  width={26}
-                  height={26}
-                  className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
-                />
-                <span>Universidade Cesumar</span>
-              </strong>
+            <article>
+              <div className='flex flex-col gap-2'>
+                <strong className='text-balance text-2.5xl font-semibold leading-[1.75rem] text-[#DCD7CD]'>
+                  <span className='mr-3'>
+                    {t('experience.education.title')}
+                  </span>
+                  <Image
+                    aria-hidden
+                    src='/unicesumar.svg'
+                    alt='Universidade Cesumar logo'
+                    width={26}
+                    height={26}
+                    className='mb-0.5 mr-2 inline-block rotate-[4deg] rounded'
+                  />
+                  <span>Universidade Cesumar</span>
+                </strong>
 
-              <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
-                {t('experience.education.period')}
-              </i>
-            </div>
+                <i className='text-lg font-normal not-italic text-[#DCD7CD] sm:text-xl'>
+                  {t('experience.education.period')}
+                </i>
+              </div>
 
-            <div className='max-w-prose'>
-              <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
-                {t('experience.education.description')}
-              </p>
-            </div>
-          </article>
+              <div className='max-w-prose'>
+                <p className='mt-4 text-sm leading-[1.5rem] sm:text-base'>
+                  {t('experience.education.description')}
+                </p>
+              </div>
+            </article>
+          </div>
+          <span className='line-animation absolute bottom-0 right-1/2 -z-10 block h-px w-screen translate-x-1/2 bg-white' />
         </section>
       </main>
 
@@ -385,7 +391,7 @@ export default async function Home({ params }: HomeProps) {
         </div>
 
         <div className='group relative flex items-center justify-center gap-1.5 p-8 text-xs lowercase leading-none text-[#57544E]'>
-          <span className='absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-[#1B1B1B]' />
+          <span className='line-animation absolute left-1/2 top-0 -z-10 block h-px w-screen -translate-x-1/2 bg-white' />
 
           <span className='pt-0.5'>{t('footer.developedBy')}</span>
           <Image
