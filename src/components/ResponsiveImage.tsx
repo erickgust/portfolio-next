@@ -17,7 +17,7 @@ export function ResponsiveImage({ desktop, mobile }: ResponsiveImageProps) {
   const common = { alt: desktop.alt, sizes: '100vw' }
 
   const {
-    props: { srcSet: desktopSrc },
+    props: { srcSet: desktopSrc, width: desktopWidth, height: desktopHeight },
   } = getImageProps({
     ...common,
     width: desktop.width,
@@ -38,8 +38,18 @@ export function ResponsiveImage({ desktop, mobile }: ResponsiveImageProps) {
 
   return (
     <picture>
-      <source media='(min-width: 600px)' srcSet={desktopSrc} />
-      <source media='(min-width: 300px)' srcSet={mobileSrc} />
+      <source
+        media='(min-width: 600px)'
+        width={desktopWidth}
+        height={desktopHeight}
+        srcSet={desktopSrc}
+      />
+      <source
+        media='(min-width: 300px)'
+        width={rest.width}
+        height={rest.height}
+        srcSet={mobileSrc}
+      />
       <img
         alt={alt}
         {...rest}
