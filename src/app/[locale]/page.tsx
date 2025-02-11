@@ -21,8 +21,8 @@ export default async function Home({ params }: HomeProps) {
   return (
     <div className='overflow-x-hidden px-11'>
       <header className='relative mx-auto flex max-w-screen-lg items-center justify-between py-16 text-[#DCD7CD] sm:py-8'>
-        <VerticalLine side='left' />
-        <VerticalLine side='right' />
+        <VerticalLine side='left' origin='top' />
+        <VerticalLine side='right' origin='top' />
 
         <strong className='text-base font-normal sm:text-sm'>
           Erick Gustavo
@@ -390,8 +390,8 @@ export default async function Home({ params }: HomeProps) {
       </main>
 
       <footer className='relative mx-auto max-w-screen-lg'>
-        <VerticalLine side='left' />
-        <VerticalLine side='right' />
+        <VerticalLine side='left' origin='bottom' />
+        <VerticalLine side='right' origin='bottom' />
 
         <div className='flex flex-col items-center justify-center gap-2 py-64 text-[#DCD7CD] sm:gap-4 sm:py-48'>
           <p className='text-base sm:text-2xl'>{t('footer.letWork')}</p>
