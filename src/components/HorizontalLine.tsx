@@ -59,6 +59,7 @@ export function HorizontalLine({
 
   return (
     <span
+      aria-hidden
       ref={lineRef}
       data-side={side}
       data-start={start}

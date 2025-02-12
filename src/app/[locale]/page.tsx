@@ -36,6 +36,10 @@ export default async function Home({ params }: HomeProps) {
       </header>
 
       <main className='relative mx-auto max-w-screen-lg'>
+        <span
+          aria-hidden
+          className='absolute left-0 top-0 block h-full w-px bg-white opacity-0'
+        />
         <VerticalLine side='left' />
         <VerticalLine side='right' />
 
